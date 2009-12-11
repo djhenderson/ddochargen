@@ -1,7 +1,10 @@
 
-require "lib/CharacterAttributes.rb"
+require "lib/Character.rb"
 
-attr = CharacterAttributes.new()
+char = Character.new()
+char.first_name = "Lelah"
+char.last_name = ""
+attr = char.attributes
 
 attr.maxbuypoints = 32
 
