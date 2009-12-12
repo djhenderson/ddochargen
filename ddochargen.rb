@@ -1,5 +1,13 @@
 
 require "lib/Character.rb"
+require "lib/DDODatabase.rb"
+
+# Load data.
+db = DDODatabase.new()
+db.backend.source = "./data/"
+db.load()
+
+puts db.skills
 
 char = Character.new()
 char.first_name = "Lelah"

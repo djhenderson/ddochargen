@@ -1,8 +1,8 @@
 
 class Skill
-  attr_reader :name, :related_attribute
+  attr_accessor :name, :related_attribute, :description, :usable_untrained
 
-  def initialize(name, relatedattr, usable = true)
+  def initialize(name = "", relatedattr = "", usable = true)
     @name = name
     @related_attribute = relatedattr
     @usable_untrained = usable
@@ -14,5 +14,9 @@ class Skill
 
   def ==(skill)
     return (skill.name == @name)
+  end
+
+  def to_s
+    return "Name = #{name}, Related Attribute = #{related_attribute}, Description = #{description}, Usable Untrained = #{usable_untrained}"
   end
 end
