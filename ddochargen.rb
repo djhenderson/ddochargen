@@ -1,16 +1,16 @@
 
 require "lib/Character.rb"
-require "lib/DDODatabase.rb"
+require "lib/Database.rb"
 
 # Load data.
-db = DDODatabase.new()
+db = DDOChargen::Database.new()
 db.backend.source = "./data/"
 db.load()
 
-puts db.skills
-puts db.races
-
-char = Character.new()
+# Every character is assigned his own database. This pretty much makes
+# the character a god object. But who cares? Seriously, the character is
+# *the* central object of a character generator!
+char = DDOChargen::Character.new(db)
 char.first_name = "Lelah"
 char.last_name = ""
 attr = char.attributes
@@ -27,3 +27,8 @@ puts "Int = #{attr.intelligence} Buypoints = #{attr.buypoints}"
 8.times { attr.increase("wis") }
 puts "Wis = #{attr.wisdom} Buypoints = #{attr.buypoints}"
 puts "Cha = #{attr.charisma} Buypoints = #{attr.buypoints}"
+
+char.levels[1].skill_increases["balance"] = 1
+char.levels[0].skill_increases["balance"] = 1
+
+puts char.levels[0].skill_rank("balance")

@@ -1,0 +1,2910 @@
+FEATNAME: Abundant Step;
+FEATDESCRIPTION: You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk.;
+CLASSLIST: Monk;
+LEVEL: 12;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: AC Bonus;
+FEATDESCRIPTION: Your training improves your armor class, so long as you remain centered (Unarmored, unencumbered, and wielding ki weapons).;
+CLASSLIST: Monk;
+LEVEL: 5;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Acrobatic;
+FEATDESCRIPTION: You have excellent body awareness and coordination. You receive a +2 bonus on Jump checks and Tumble checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: AcrobaticIcon;
+                                                                                                             
+FEATNAME: Adamantine Body;
+FEATDESCRIPTION: Adamantine body counts as heavy armor, grants a +8 armor bonus and damage reduction 2/adamantine, but also provides a 35% arcane spell failure chance, -5 armor check penalty to certain skills, and a +1 maximum Dex bonus. This feat can only be purchased at 1st level.;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Creation;
+ICON: WarforgedFeatIcon;
+                                                                                                             
+FEATNAME: Alertness;
+FEATDESCRIPTION: You have finely tuned senses. You receive a +2 bonus on Listen checks and Spot checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: AlertnessIcon;
+                                                                                                             
+FEATNAME: Athletic;
+FEATDESCRIPTION: You have a knack for athletic endeavors You receive a +2 bonus on Balance checks and Swim checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: AthleticIcon;
+                                                                                                             
+FEATNAME: Attack;
+FEATDESCRIPTION: Your basic attack. When activated, you will continue attacking until your target is defeated.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic;
+ICON: AttackIcon;
+                                                                                                             
+FEATNAME: Aura of Courage;
+FEATDESCRIPTION: A feeling of confidence and fearlessness surrounds all party members near a paladin, granting a bonus to saves against fear. Beginning at 3rd level, a paladin is immune to fear. Allies within 10 feet gain +4 vs. fear.;
+CLASSLIST: Paladin;
+LEVEL: 3;
+ACQUIRE: Automatic;
+ICON: AuraOfCourageIcon;
+                                                                                                             
+FEATNAME: Aura of Good;
+FEATDESCRIPTION: An aura of holiness surrounds all party members near a paladin, granting a bonus to saves and Armor Class against evil creatures. All allies within range gain +1 to AC and +1 resistance bonus to saving throws.;
+CLASSLIST: Paladin;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: AuraOfGoodIcon;
+                                                                                                             
+FEATNAME: Beloved of the Lord of Blades;
+FEATDESCRIPTION: You are a favored soul of the Lord of Blades. You deal 2 extra damage with greatswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 12;
+ACQUIRE: Automatic;
+NEEDSALL: Race Warforged, Feat Favored by the Lord of Blades;
+ICON: NoImage;
+                                                                                                             
+FEATNAME: Beloved of the Silver Flame;
+FEATDESCRIPTION: You are a favored soul of the Silver Flame. You deal 2 extra damage with longbows.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 12;
+ACQUIRE: Automatic;
+NEEDSALL: Feat Favored by the Silver Flame;
+ICON: NoImage;
+
+FEATNAME: Beloved of the Sovereign Host;
+FEATDESCRIPTION: You are a favored soul of the Sovereign Host. You deal 2 extra damage with longswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 12;
+ACQUIRE: Automatic;
+NEEDSALL: Feat Favored by the Sovereign Host;
+ICON: NoImage;
+
+FEATNAME: Beloved of the Undying Court;
+FEATDESCRIPTION: You are a favored soul of the Undying Court. You deal 2 extra damage with scimitars.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 12;
+ACQUIRE: Automatic;
+NEEDSALL: Race Elf, Feat Favored by the Undying Court;
+ICON: NoImage;
+
+FEATNAME: Beloved of Vulkoor;
+FEATDESCRIPTION: You are a favored soul of Vulkoor. You deal 2 extra damage with shortswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 12;
+ACQUIRE: Automatic;
+NEEDSALL: Race Drow, Feat Favored by Vulkoor;
+ICON: NoImage;
+
+FEATNAME: Bow Strength;
+FEATDESCRIPTION: You can apply your Strength bonus to bow damage.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Weapon Focus: Ranged Weapons, Feat Point Blank Shot, BAB 4;
+NEEDSONE: Feat Power Attack, Feat Combat Expertise, Feat Weapon Specialization: Ranged Weapons;
+ICON: BowStrengthIcon;
+
+FEATNAME: Bullheaded;
+FEATDESCRIPTION: You are exceptionally headstrong and difficult to sway. You receive a +1 on all Will saves and +2 bonus on Intimidate checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: BullheadedIcon;
+
+FEATNAME: Child of the Lord of Blades;
+FEATDESCRIPTION: You are a favored soul of the Lord of Blades. You have +1 to attack rolls with greatswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 3;
+ACQUIRE: Automatic;
+NEEDSALL: Race Warforged, Feat Favored by the Lord of Blades;
+ICON: NoImage;
+
+FEATNAME: Child of the Silver Flame;
+FEATDESCRIPTION: You are a favored soul of the Silver Flame. You have +1 to attack rolls with longbows.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 3;
+ACQUIRE: Automatic;
+NEEDSALL: Feat Favored by the Silver Flame;
+ICON: NoImage;
+
+FEATNAME: Child of the Sovereign Host;
+FEATDESCRIPTION: You are a favored soul of the Sovereign Host. You have +1 to attack rolls with longswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 3;
+ACQUIRE: Automatic;
+NEEDSALL: Feat Favored by the Sovereign Host;
+ICON: NoImage;
+
+FEATNAME: Child of the Undying Court;
+FEATDESCRIPTION: You are a favored soul of the Undying Court. You have +1 to attack rolls with scimitars.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 3;
+ACQUIRE: Automatic;
+NEEDSALL: Race Elf, Feat Favored by the Undying Court;
+ICON: NoImage;
+
+FEATNAME: Child of Vulkoor;
+FEATDESCRIPTION: You are a favored soul of Vulkoor. You have +1 to attack rolls with shortswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 3;
+ACQUIRE: Automatic;
+NEEDSALL: Race Drow, Feat Favored by Vulkoor;
+ICON: NoImage;
+
+FEATNAME: Cleave;
+FEATDESCRIPTION: Activate this ability to attack one or more enemies in an arc in front of you.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Power Attack;
+ICON: CleaveIcon;
+
+FEATNAME: Combat Casting;
+FEATDESCRIPTION: You gain a +4 bonus on Concentration checks when damaged in combat.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: CombatCastingIcon;
+
+FEATNAME: Combat Expertise;
+FEATDESCRIPTION: While using Combat Expertise mode, you trade your attack bonus for extra AC. Casting a spell ends this mode.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Intelligence 13;
+ICON: CombatExpertiseIcon;
+
+FEATNAME: Completionist;
+FEATDESCRIPTION: You win DDO! You've leveled to 20 in every class, and for your effort can take this feat to get a +2 bonus to all skills and ability scores. When more classes are added, this feat will deactivate and you will need to gain those past lives before this benefit reactivates.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Fighter, Feat Past Life: Paladin, Feat Past Life: Barbarian, Feat Past Life: Monk, Feat Past Life: Rogue, Feat Past Life: Ranger, Feat Past Life: Cleric, Feat Past Life: Wizard, Feat Past Life: Sorcerer, Feat Past Life: Bard, Feat Past Life: Favored Soul;
+ICON: NoImage;
+
+FEATNAME: Composite Plating;
+FEATDESCRIPTION: Warforged plating counts as light armor and grants a +2 armor bonus, but also provides a 5% arcane spell failure chance.;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Cripling Strike;
+FEATDESCRIPTION: A rogue with this ability can sneak attack opponents with such precision that his or her blows weaken and hamper them. An opponent damaged by a sneak attack also takes 2 points of Strength damage.;
+FEATTAG: Rogue Bonus;
+CLASSLIST: Rogue;
+LEVEL: 10;
+ACQUIRE: Train;
+ICON: CripplingStrike;
+
+FEATNAME: Damage Reduction;
+FEATDESCRIPTION: Grants damage reduction 1/– to all unarmed, weapon or natural attacks. Improves by –1 at levels 10, 13, 16 and 19.;
+CLASSLIST: Barbarian;
+LEVEL: 2;
+ACQUIRE: Automatic;
+ICON: DamageReductionIcon;
+
+FEATNAME: Defensive Fighting;
+FEATDESCRIPTION: While using Defensive Fighting mode, you trade attack bonus for a small AC bonus. Casting a spell ends this mode.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic;
+NEEDSALL: BAB 1;
+ICON: DefensiveFightingIcon;
+
+FEATNAME: Defensive Roll;
+FEATDESCRIPTION: Grants the rogue a chance to cheat death when critically injured. When below 20% health, a rogue with Defensive Roll has a chance equal to their total Reflex Save Modifier of taking half damage from melee or ranged weapon attacks, and negating any special effects associated with the attack as if the rogue were blocking. Defensive Roll is subject to the same armor and encumbrance restrictions as the Evasion class skill.;
+FEATTAG: Rogue Bonus;
+CLASSLIST: Rogue;
+LEVEL: 10;
+ACQUIRE: Train;
+ICON: DefensiveRollIcon;
+
+FEATNAME: Deflect Arrows;
+FEATDESCRIPTION: Once every few seconds, you are able to block some projectiles that would otherwise hit you.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Monk;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Ability Dexterity 13;
+ICON: DeflectArrowsIcon;
+
+FEATNAME: Diamond Body;
+FEATDESCRIPTION: You have firm control over your metabolism and are now immune to poison.;
+CLASSLIST: Monk;
+LEVEL: 11;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Diamond Soul;
+FEATDESCRIPTION: You gain spell resistance equal to your monk level + 10, protecting you from non-damaging spells.;
+CLASSLIST: Monk;
+LEVEL: 13;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Diehard;
+FEATDESCRIPTION: You automatically stabilize when incapacitated.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: DiehardIcon;
+
+FEATNAME: Discipline;
+FEATDESCRIPTION: You are difficult to distract with spell or blow. You receive a +1 on all Will saves and +2 bonus on Concentration checks.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: DisciplineIcon;
+
+FEATNAME: Divine Grace;
+FEATDESCRIPTION: A paladin receives bonus to saving throws, equal to his or her Charisma bonus.;
+CLASSLIST: Paladin;
+LEVEL: 2;
+ACQUIRE: Automatic;
+ICON: DivineGraceIcon;
+
+FEATNAME: Divine Health;
+FEATDESCRIPTION: A paladin is immune to all diseases.;
+CLASSLIST: Paladin;
+LEVEL: 3;
+ACQUIRE: Automatic;
+ICON: DivineHealthIcon;
+
+FEATNAME: Dodge;
+FEATDESCRIPTION: Grants you a +1 dodge bonus to your Armor Class.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 13;
+ICON: DodgeIcon;
+
+FEATNAME: Drow Spell Resistance;
+FEATDESCRIPTION: Drow are naturally resistant to spells and magical effects. You begin with SR 11 against nondamaging spells and effects.;
+RACELIST: Drow;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: DrowSpellResistanceIcon;
+
+FEATNAME: Dwarven Stability;
+FEATDESCRIPTION: Dwarves naturally are able to keep their balance, receiving a +4 on their Balance skill.;
+RACELIST: Dwarf;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: DwarvenFeatsIcon;
+
+FEATNAME: Dwarven Stonecutting;
+FEATDESCRIPTION: Dwarves naturally are able to find secret doors more often, receiving a +2 bonus on their Search skill.;
+RACELIST: Dwarf;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: DwarvenFeatsIcon;
+
+FEATNAME: Elven Keen Senses;
+FEATDESCRIPTION: Elves have keen senses and gain a +2 bonus to Listen, Search, and Spot checks.;
+RACELIST: Elf, Drow;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: ElvenFeatsIcon;
+
+FEATNAME: Empower Healing Spell;
+FEATDESCRIPTION: While this metamagic feat is active, healing spells are 50% more effective, but they consume 10 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train;
+ICON: EmpowerHealingSpellIcon;
+
+FEATNAME: Empower Spell;
+FEATDESCRIPTION: While this metamagic feat is active, spells are 50% more damaging, but they consume 15 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: EmpowerSpellIcon;
+
+FEATNAME: Enchantment Save Bonus;
+FEATDESCRIPTION: Elves are naturally resistant to enchantments, receiving a +2 bonus on saves against enchantments.;
+RACELIST: Elf, Drow;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: ElvenFeatsIcon;
+
+PARENTHEADING: Energy Resistance;
+FEATNAME: Acid;
+FEATDESCRIPTION: You gain Acid Resistance: 10.;
+FEATTAG: Favored Soul Bonus;
+CLASSLIST: Favored Soul;
+LEVEL: 5;
+ACQUIRE: Train;
+ICON: NoImage;
+
+PARENTHEADING: Energy Resistance;
+FEATNAME: Cold;
+FEATDESCRIPTION: You gain Cold Resistance: 10.;
+FEATTAG: Favored Soul Bonus;
+CLASSLIST: Favored Soul;
+LEVEL: 5;
+ACQUIRE: Train;
+ICON: NoImage;
+
+PARENTHEADING: Energy Resistance;
+FEATNAME: Electricity;
+FEATDESCRIPTION: You gain Electricity Resistance: 10.;
+FEATTAG: Favored Soul Bonus;
+CLASSLIST: Favored Soul;
+LEVEL: 5;
+ACQUIRE: Train;
+ICON: NoImage;
+
+PARENTHEADING: Energy Resistance;
+FEATNAME: Fire;
+FEATDESCRIPTION: You gain Fire Resistance: 10.;
+FEATTAG: Favored Soul Bonus;
+CLASSLIST: Favored Soul;
+LEVEL: 5;
+ACQUIRE: Train;
+ICON: NoImage;
+
+PARENTHEADING: Energy Resistance;
+FEATNAME: Sonic;
+FEATDESCRIPTION: You gain Sonic Resistance: 10.;
+FEATTAG: Favored Soul Bonus;
+CLASSLIST: Favored Soul;
+LEVEL: 5;
+ACQUIRE: Train;
+ICON: NoImage;
+
+FEATNAME: Enlarge Spell;
+FEATDESCRIPTION: While this metamagic feat is active, spells have twice the range, but they consume 10 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: EnlargeSpellIcon;
+
+FEATNAME: Eschew Materials;
+FEATDESCRIPTION: While this metamagic feat is active, normal material components are not required, but they consume 2 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: EschewMaterialsIcon;
+
+FEATNAME: Evasion;
+FEATDESCRIPTION: When a $CLASS makes a successful Reflex save to avoid damage, he or she suffers no damage instead of half damage.;
+CLASSLIST: Monk, Rogue, Ranger;
+LEVEL: 2, 2, 9;
+ACQUIRE: Automatic, Automatic, Automatic;
+ICON: EvasionIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Bastard Sword;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a bastard sword.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1, Ability Strength 13;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Dwarven Waraxe;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a dwarven waraxe.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1, Ability Strength 13;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Great Crossbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a great crossbow.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Kama;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a kama.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Khopesh;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a khopesh.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Repeating Heavy Crossbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a repeating heavy crossbow.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Repeating Light Crossbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a repeating light crossbow.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: ExoticWeaponProfIcon;
+
+PARENTHEADING: Exotic Weapon Proficiency;
+FEATNAME: Shuriken;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a shuriken.;
+FEATTAG: Fighter Bonus;
+RACELIST: Drow;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: AutoNoPrereq, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: ExoticWeaponProfIcon;
+
+FEATNAME: Extend Spell;
+FEATDESCRIPTION: While this metamagic feat is active, spells with durations last twice as long, but they consume 10 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: ExtendSpellIcon;
+
+FEATNAME: Extra Turning;
+FEATDESCRIPTION: Allows you to turn undead four more times per rest period.;
+CLASSLIST: Paladin, Cleric;
+LEVEL: 4, 1;
+ACQUIRE: Train, Train;
+NEEDSALL: Feat Turn Undead;
+ICON: ExtraTurningFeatIcon;
+
+FEATNAME: Fascinate;
+FEATDESCRIPTION:  Activate this bard ability to make your foes stop what they're doing and listen to your soothing notes.;
+CLASSLIST: Bard;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: FascinateIcon;
+
+FEATNAME: Fast Movement;
+FEATDESCRIPTION: $CLASS move 10% faster than other characters.;
+CLASSLIST: Barbarian, Monk;
+LEVEL: 1, 3;
+ACQUIRE: Automatic, Automatic;
+ICON: FastMovementIcon;
+
+FEATNAME: Favored by the Lord of Blades;
+FEATDESCRIPTION: You are a favored soul of the Lord of Blades. You are considered proficient with greatswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Race Warforged;
+ICON: NoImage;
+
+FEATNAME: Favored by the Silver Flame;
+FEATDESCRIPTION: You are a favored soul of the Silver Flame. You are considered proficient with longbows.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: NoImage;
+
+FEATNAME: Favored by the Sovereign Host;
+FEATDESCRIPTION: You are a favored soul of the Sovereign Host. You are considered proficient with longswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: NoImage;
+
+FEATNAME: Favored by the Undying Court;
+FEATDESCRIPTION: You are a favored soul of the Undying Court. You are considered proficient with scimitars.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Race Elf;
+ICON: NoImage;
+
+FEATNAME: Favored by Vulkoor;
+FEATDESCRIPTION: You are a favored soul of Vulkoor. You are considered proficient with shortswords.;
+FEATTAG: Divine;
+CLASSLIST: Favored Soul;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Race Drow;
+ICON: NoImage;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Aberration;
+FEATDESCRIPTION: Grants +2 to damage to Aberrations. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyAbberationIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Animal;
+FEATDESCRIPTION: Grants +2 to damage to Animals. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyAnimalIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Chaotic Outsider;
+FEATDESCRIPTION: Grants +2 to damage to Chaotic Outsiders. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyChaoticOutsiderIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Construct;
+FEATDESCRIPTION: Grants +2 to damage to Constructs. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyConstructIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Dragon;
+FEATDESCRIPTION: Grants +2 to damage to Dragons. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyDragonIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Dwarf;
+FEATDESCRIPTION: Grants +2 to damage to Dwarves. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyDwarfIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Elemental;
+FEATDESCRIPTION: Grants +2 to damage to Elementals. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyElementalIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Elf;
+FEATDESCRIPTION: Grants +2 to damage to Elves. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyElfIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Evil Outsider;
+FEATDESCRIPTION: Grants +2 to damage to Evil Outsiders. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyEvilOutsiderIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Giant;
+FEATDESCRIPTION: Grants +2 to damage to Giants. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyGiantIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Gnoll;
+FEATDESCRIPTION: Grants +2 to damage to Gnolls. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyGnollIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Goblinoid;
+FEATDESCRIPTION: Grants +2 to damage to Goblinoids. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyGoblinoidIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Halfling;
+FEATDESCRIPTION: Grants +2 to damage to Halflings. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyHalflingIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Human;
+FEATDESCRIPTION: Grants +2 to damage to Humans. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyHumanIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Lawful Outsider;
+FEATDESCRIPTION: Grants +2 to damage to Lawful Outsiders. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyLawfulOutsiderIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Magical Beast;
+FEATDESCRIPTION: Grants +2 to damage to Magical Beasts. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyMagicalBeastIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Monstrous Humanoid;
+FEATDESCRIPTION: Grants +2 to damage to Monstrous Humanoids. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyMonstrousHumanoidIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Ooze;
+FEATDESCRIPTION: Grants +2 to damage to Oozes. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyOozeIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Reptillian;
+FEATDESCRIPTION: Grants +2 to damage to Reptilians. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyReptillianIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Undead;
+FEATDESCRIPTION: Grants +2 to damage to Undead. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyUndeadIcon;
+
+PARENTHEADING: Favored Enemy;
+FEATNAME: Vermin;
+FEATDESCRIPTION: Grants +2 to damage to Vermin. Feat advances by +2 at levels 5, 10, 15 and 20.;
+FEATTAG: Favored Enemy;
+CLASSLIST: Ranger;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: FavoredEnemyVerminIcon;
+
+FEATNAME: Fear Immunity;
+FEATDESCRIPTION: A paladin is immune to fear effects.;
+CLASSLIST: Paladin;
+LEVEL: 3;
+ACQUIRE: Automatic;
+ICON: FearImmunityIcon;
+
+FEATNAME: Finishing Moves;
+FEATDESCRIPTION: Through careful use of their abilities, monks can unlock special finishing moves to perform amazing effects. This button changes into various finishing moves as they become available.;
+CLASSLIST: Monk;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Flurry of Blows;
+FEATDESCRIPTION: When centered (Unarmored, unencumbered, and weilding monk weapons), you get an increase to your attack bonus, and more of your attacks will successfully strike your opponent as a result. This attack bonus starts at 1 (at level 1) and increases by one for every four additional monk levels.;
+CLASSLIST: Monk;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Force of Personality;
+FEATDESCRIPTION: Picks the highest modifier between your charisma and your wisdom for your will saves.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Charisma 13;
+ICON: ForceOfPersonalityIcon;
+
+FEATNAME: Giant Evasion;
+FEATDESCRIPTION: Dwarves naturally are harder to hit by giants, receiving a +4 AC bonus when attacked by creatures of the giant type.;
+RACELIST: Dwarf;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: DwarvenFeatsIcon;
+
+FEATNAME: Great Cleave;
+FEATDESCRIPTION: Activate this ability to attack one or more enemies in a wider arc than cleave.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Cleave, BAB 4;
+ICON: GreatCleaveIcon;
+
+FEATNAME: Great Fortitude;
+FEATDESCRIPTION: Grants you a +2 bonus on your Fortitude saves.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: GreatFortitudeIcon;
+
+FEATNAME: Greater Dragonmark of Healing;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Jorasco to cast Heal.;
+RACELIST: Halfling;
+LEVEL: 9;
+ACQUIRE: Train;
+NEEDSALL: Feat Lesser Dragonmark of Healing;
+ICON: DragonmarkHealing;
+
+FEATNAME: Greater Dragonmark of Making;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Cannith to cast Reconstruct.;
+RACELIST: Human;
+LEVEL: 9;
+ACQUIRE: Train;
+NEEDSALL: Feat Lesser Dragonmark of Making;
+ICON: DragonmarkMaking;
+
+FEATNAME: Greater Dragonmark of Passage;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Orien to cast Teleport.;
+RACELIST: Human;
+LEVEL: 9;
+ACQUIRE: Train;
+NEEDSALL: Feat Lesser Dragonmark of Passage;
+ICON: DragonmarkPassage;
+
+FEATNAME: Greater Dragonmark of Sentinel;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Deneith to cast Globe of Invulnerability.;
+RACELIST: Human;
+LEVEL: 9;
+ACQUIRE: Train;
+NEEDSALL: Feat Lesser Dragonmark of Sentinel;
+ICON: DragonmarkSentinel;
+
+FEATNAME: Greater Dragonmark of Shadow;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Phiarlan to cast Shadow Walk.;
+RACELIST: Elf;
+LEVEL: 9;
+ACQUIRE: Train;
+NEEDSALL: Feat Lesser Dragonmark of Shadow;
+ICON: DragonmarkShadow;
+
+FEATNAME: Greater Dragonmark of Warding;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Kundarak to cast Greater Glyph of Warding.;
+RACELIST: Dwarf;
+LEVEL: 9;
+ACQUIRE: Train;
+NEEDSALL: Feat Lesser Dragonmark of Warding;
+ICON: DragonmarkWarding;
+
+FEATNAME: Greater Rage;
+FEATDESCRIPTION: A barbarian's rage grows stronger after reaching 11th level.;
+CLASSLIST: Barbarian;
+LEVEL: 11;
+ACQUIRE: Automatic;
+ICON: RageIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Abjuration;
+FEATDESCRIPTION: Your spells of the Abjuration school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Conjuration;
+FEATDESCRIPTION: Your spells of the Conjuration school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Enchantment;
+FEATDESCRIPTION: Your spells of the Enchantment school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Evocation;
+FEATDESCRIPTION: Your spells of the Evocation school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Illusion;
+FEATDESCRIPTION: Your spells of the Illusion school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Necromancy;
+FEATDESCRIPTION: Your spells of the Necromancy school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Greater Spell Focus;
+FEATNAME: Transmutation;
+FEATDESCRIPTION: Your spells of the Transmutation school are harder to resist, receiving a +1 bonus on save DCs. This stacks with the bonus from Spell Focus.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+FEATNAME: Greater Spell Penetration;
+FEATDESCRIPTION: Adds +2 to your caster level check for defeating spell resistance (in addition to the +2 from the Spell Penetration feat).;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Spell Penetration;
+ICON: SpellPenetrationIcon;
+
+FEATNAME: Greater Two Handed Fighting;
+FEATDESCRIPTION: Allows you to make additional glancing blow attacks when wielding a two-handed weapon and moving, and late in your chain of attacks.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Strength 17, BAB 11, Feat Improved Two Handed Fighting;
+ICON: GreaterTwoHandedFightingIcon;
+
+FEATNAME: Greater Two Weapon Fighting;
+FEATDESCRIPTION: Increases the number of attacks when fighting with two weapons.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 17, BAB 11, Feat Improved Two Weapon Fighting;
+ICON: GreaterTwoWeaponFightingIcon;
+
+PARENTHEADING: Greater Weapon Focus;
+FEATNAME: Bludgeoning Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to attack rolls when using a bludgeoning weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 8;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Bludgeoning Weapons;
+ICON: GreaterWeaponFocusIcon;
+
+PARENTHEADING: Greater Weapon Focus;
+FEATNAME: Piercing Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to attack rolls when using a piercing weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 8;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Piercing Weapons;
+ICON: GreaterWeaponFocusIcon;
+
+PARENTHEADING: Greater Weapon Focus;
+FEATNAME: Ranged Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to attack rolls when using a ranged weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 8;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Ranged Weapons;
+ICON: GreaterWeaponFocusIcon;
+
+PARENTHEADING: Greater Weapon Focus;
+FEATNAME: Slashing Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to attack rolls when using a slashing weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 8;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Slashing Weapons;
+ICON: GreaterWeaponFocusIcon;
+
+PARENTHEADING: Greater Weapon Focus;
+FEATNAME: Thrown Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to attack rolls when using a thrown weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 8;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Thrown Weapons;
+ICON: GreaterWeaponFocusIcon;
+
+PARENTHEADING: Greater Weapon Specialization;
+FEATNAME: Bludgeoning Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a bludgeoning weapon. This bonus stacks with the Weapon Specialization feat.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 12;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Bludgeoning Weapons, Feat Weapon Specialization: Bludgeoning Weapons;
+ICON: GreaterWeaponSpecializationIcon;
+
+PARENTHEADING: Greater Weapon Specialization;
+FEATNAME: Piercing Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a piercing weapon. This bonus stacks with the Weapon Specialization feat.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 12;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Piercing Weapons, Feat Weapon Specialization: Piercing Weapons;
+ICON: GreaterWeaponSpecializationIcon;
+
+PARENTHEADING: Greater Weapon Specialization;
+FEATNAME: Ranged Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a ranged weapon. This bonus stacks with the Weapon Specialization feat.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 12;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Ranged Weapons, Feat Weapon Specialization: Ranged Weapons;
+ICON: GreaterWeaponSpecializationIcon;
+
+PARENTHEADING: Greater Weapon Specialization;
+FEATNAME: Slashing Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a slashing weapon. This bonus stacks with the Weapon Specialization feat.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 12;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Slashing Weapons, Feat Weapon Specialization: Slashing Weapons;
+ICON: GreaterWeaponSpecializationIcon;
+
+PARENTHEADING: Greater Weapon Specialization;
+FEATNAME: Thrown Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a thrown weapon. This bonus stacks with the Weapon Specialization feat.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 12;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Thrown Weapons, Feat Weapon Specialization: Thrown Weapons;
+ICON: GreaterWeaponSpecializationIcon;
+
+FEATNAME: Halfling Agility;
+FEATDESCRIPTION: Halflings are agile and gain a +2 bonus to Jump and Move Silently checks.;
+RACELIST: Halfling;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: HalflingFeatsIcon;
+
+FEATNAME: Halfling Bravery;
+FEATDESCRIPTION: Halflings are naturally resistant to fear and gain a +2 morale bonus on saving throws against fear.;
+RACELIST: Halfling;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: HalflingFeatsIcon;
+
+FEATNAME: Halfling Keen Ears;
+FEATDESCRIPTION: Halflings have keen ears and gain a +2 bonus to Listen checks.;
+RACELIST: Halfling;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: HalflingFeatsIcon;
+
+FEATNAME: Halfling Luck;
+FEATDESCRIPTION: Halflings are surprisingly lucky and gain a +1 bonus on all saving throws.;
+RACELIST: Halfling;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: HalflingFeatsIcon;
+
+FEATNAME: Halfling Size Bonus;
+FEATDESCRIPTION: As Small creatures, halflings receive a +1 size bonus to attack rolls and Armor Class, and a +4 bonus on Hide checks.;
+RACELIST: Halfling;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: HalflingFeatsIcon;
+
+FEATNAME: Hamstring;
+FEATDESCRIPTION: Using this attack, you may reduce the target's movement rate for a short time. Some creatures may be immune to the hamstring effect.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Sneak Attack;
+ICON: HamstringIcon;
+
+FEATNAME: Heavy Armor Proficiency;
+FEATDESCRIPTION: You are proficient with heavy armor, and do not suffer armor penalties to your attack rolls when wearing heavy armor.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: AutoNoPrereq, AutoNoPrereq, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train;
+NEEDSALL: Feat Medium Armor Proficiency;
+ICON: HeavyArmorProfIcon;
+
+FEATNAME: Heighten Spell;
+FEATDESCRIPTION: While this metamagic feat is active, your spells are raised to the highest spell level your character can cast, making them more difficult to resist, but increasing their spell point cost.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 8, 8, 3, 3, 4, 4, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: HeightenSpellIcon;
+
+FEATNAME: Heroic Durability;
+FEATDESCRIPTION: Increases your maximum hit points by 20.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic;
+ICON: HeroicDurabilityIcon;
+
+FEATNAME: Immunity to Sleep;
+FEATDESCRIPTION: Elves are naturally immune to magical sleep effects.;
+RACELIST: Elf, Drow;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: ElvenFeatsIcon;
+
+PARENTHEADING: Improved Critical;
+FEATNAME: Bludgeoning Weapons;
+FEATDESCRIPTION: Doubles your critical hit range when using the selected weapon. Applies to a single weapon type. May be taken multiple times, each time applying to a different weapon type.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 8;
+ICON: ImprovedCriticalIcon;
+
+PARENTHEADING: Improved Critical;
+FEATNAME: Piercing Weapons;
+FEATDESCRIPTION: Doubles your critical hit range when using the selected weapon. Applies to a single weapon type. May be taken multiple times, each time applying to a different weapon type.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 8;
+ICON: ImprovedCriticalIcon;
+
+PARENTHEADING: Improved Critical;
+FEATNAME: Ranged Weapons;
+FEATDESCRIPTION: Doubles your critical hit range when using the selected weapon. Applies to a single weapon type. May be taken multiple times, each time applying to a different weapon type.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 8;
+ICON: ImprovedCriticalIcon;
+
+PARENTHEADING: Improved Critical;
+FEATNAME: Slashing Weapons;
+FEATDESCRIPTION: Doubles your critical hit range when using the selected weapon. Applies to a single weapon type. May be taken multiple times, each time applying to a different weapon type.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 8;
+ICON: ImprovedCriticalIcon;
+
+PARENTHEADING: Improved Critical;
+FEATNAME: Thrown Weapons;
+FEATDESCRIPTION: Doubles your critical hit range when using the selected weapon. Applies to a single weapon type. May be taken multiple times, each time applying to a different weapon type.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 8;
+ICON: ImprovedCriticalIcon;
+
+FEATNAME: Improved Damage Reduction;
+FEATDESCRIPTION: You gain damage reduction 1/adamantine, or improve your existing damage reduction by 1.;
+FEATTAG: Multiple;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Improved Evasion;
+FEATDESCRIPTION: Like Evasion, except $CLASS takes only half damage on a failed Reflex save.;
+FEATTAG: Rogue Bonus;
+CLASSLIST: Monk, Rogue;
+LEVEL: 9, 10;
+ACQUIRE: Automatic, Train;
+ICON: ImprovedEvasionIcon;
+
+FEATNAME: Improved Feint;
+FEATDESCRIPTION: An attack which also Bluffs the enemy, enabling a sneak attack.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Combat Expertise, Feat Sneak Attack;
+ICON: ImprovedFeintIcon;
+
+FEATNAME: Improved Fortification;
+FEATDESCRIPTION: Improves your warforged fortification, granting you immunity to sneak attacks and extra damage from critical hits. However, you lose the ability to be healed by spells from the healing subschool, such as cure light wounds.;
+RACELIST: Warforged;
+LEVEL: 8;
+ACQUIRE: Train;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Improved Inspire Courage;
+FEATDESCRIPTION: Enhances a bard’s Inspire Courage ability, granting nearby characters +1 attack, +2 damage, and +1 vs. charm and fear effects. Benefit increases by +1 at levels 8, 14, and 20.;
+CLASSLIST: Bard;
+LEVEL: 8;
+ACQUIRE: Automatic;
+ICON: InspireCourageIcon;
+
+FEATNAME: Improved Mental Toughness;
+FEATDESCRIPTION: Increases your maximum spell points by 10 at first level, and 5 spell points for each additional level.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 11, 11, 5, 5, 6, 7, 5;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Mental Toughness;
+ICON: MagicalTrainingIcon;
+
+FEATNAME: Improved Precise Shot;
+FEATDESCRIPTION: Your missile attacks may pass through friends and foes to strike your target. Foes between you and your target might be hit.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 19, Feat Precise Shot, BAB 11;
+ICON: PreciseShotIcon;
+
+FEATNAME: Improved Shield Bash;
+FEATDESCRIPTION: You keep your shield bonus while bashing with a shield.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Shield Proficiency (General);
+ICON: ImprovedShieldBashIcon;
+
+FEATNAME: Improved Shield Mastery;
+FEATDESCRIPTION: Increases the amount of damage you can absorb when defending with a shield.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 8, Feat Shield Mastery;
+ICON: ImprovedShieldMasteryIcon;
+
+FEATNAME: Improved Sunder;
+FEATDESCRIPTION: Using this attack, you may reduce the target's Armor Class for a longer time. Some creatures may be immune to the sunder effect.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Sunder, Feat Power Attack;
+ICON: SunderIcon;
+
+FEATNAME: Improved Trip;
+FEATDESCRIPTION: Using this attack, you may trip the target, rendering it prone for a longer time. Some creatures may be immune to this effect.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Combat Expertise;
+ICON: TripIcon;
+
+FEATNAME: Improved Turning;
+FEATDESCRIPTION: Gives you an improved success rate on turning checks.;
+CLASSLIST: Paladin, Cleric;
+LEVEL: 4, 1;
+ACQUIRE: Train, Train;
+NEEDSALL: Feat Turn Undead;
+ICON: ImprovedTurningIcon;
+
+FEATNAME: Improved Two Handed Fighting;
+FEATDESCRIPTION: Increases the damage of glancing blow attacks when wielding a two-handed weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Strength 17, Feat Two Handed Fighting, BAB 6;
+ICON: ImprovedTwoHandedFightingIcon;
+
+FEATNAME: Improved Two Weapon Fighting;
+FEATDESCRIPTION: Increases the number of attacks when fighting with two weapons.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 6, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 17, Feat Two Weapon Fighting, BAB 6;
+ICON: ImprovedTwoWeaponFightingIcon;
+
+FEATNAME: Improved Uncanny Dodge;
+FEATDESCRIPTION: Activate this ability to gain a temporary bonus to your AC and Reflex saves. In addition, monsters attacking you from behind don't receive a flanking bonus.;
+CLASSLIST: Barbarian, Rogue;
+LEVEL: 5, 8;
+ACQUIRE: Automatic, Automatic;
+ICON: ImprovedUncannyDodgeIcon;
+
+FEATNAME: Improved Wild Empathy;
+FEATDESCRIPTION: Activate this ranger ability to befriend an animal or beast.;
+CLASSLIST: Ranger;
+LEVEL: 7;
+ACQUIRE: Automatic;
+ICON: ImprovedWildEmpathyIcon;
+
+FEATNAME: Inscribe Scroll;
+FEATDESCRIPTION: A wizard can inscribe unknown spells from a scroll into his spell book by using purchasable spell inscription materials.;
+CLASSLIST: Wizard;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: InscribeScrollIcon;
+
+FEATNAME: Indomitable Will;
+FEATDESCRIPTION: While in a rage, the barbarian receives a +4 bonus on Will saves to resist enchantment spells. This bonus stacks with all modifiers.;
+CLASSLIST: Barbarian;
+LEVEL: 14;
+ACQUIRE: Automatic;
+ICON: IndomitableWill;
+
+FEATNAME: Inspire Competence;
+FEATDESCRIPTION: A bard can use music to help an ally succeed at a task. Ally gains +2 on skill checks with a particular skill as long as he or she is within 30 feet and can see and hear the bard. The effect lasts as long as the bard concentrates, up to a maximum of 2 minutes. A bard can’t inspire competence in himself.;
+CLASSLIST: Bard;
+LEVEL: 3;
+ACQUIRE: Automatic;
+ICON: InspireCompetenceIcon;
+
+FEATNAME: Inspire Courage;
+FEATDESCRIPTION: A bard can use song or poetics to inspire courage in his allies (including himself), bolstering them against fear and improving their combat abilities. The effect lasts for as long as the ally can hear the bard sing and for 5 rounds thereafter. An affected ally receives +1 vs. charm and fear effects and +1 on attack and weapon damage. At 8th level, and every six bard levels thereafter, this bonus increases by 1.;
+CLASSLIST: Bard;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: InspireCourageIcon;
+
+FEATNAME: Inspire Greatness;
+FEATDESCRIPTION: A bard can use his music or poetics to help an ally excel in combat. Ally must be within 30 feet and able to see and hear the bard. The ally gets +2 attack bonus, +1 Fortitude save bonus, and temporary hit points.;
+CLASSLIST: Bard;
+LEVEL: 9;
+ACQUIRE: Automatic;
+ICON: InspireGreatnessIcon;
+
+FEATNAME: Insightful Reflexes;
+FEATDESCRIPTION: Picks the highest modifier between your intelligence and your dexterity modifier for your reflex saves.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow;
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Intelligence 13;
+ICON: InsightfulReflexesIcon;
+
+FEATNAME: Iron Will;
+FEATDESCRIPTION: Grants you a +2 bonus on your Will saves.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: IronWillIcon;
+
+FEATNAME: Ki Strike: Adamantine;
+FEATDESCRIPTION: All of your unarmed melee attacks are empowered with ki and are considered adamantine for damage reduction purposes.;
+CLASSLIST: Monk;
+LEVEL: 16;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Ki Strike: Damage;
+FEATDESCRIPTION: Your unarmed strikes gain a +1 damage bonus.;
+CLASSLIST: Monk;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Ki Strike: Lawful;
+FEATDESCRIPTION: All of your unarmed melee attacks are empowered with ki and are considered lawful for damage reduction purposes.;
+CLASSLIST: Monk;
+LEVEL: 10;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Ki Strike: Magic;
+FEATDESCRIPTION: All of your unarmed melee attacks are empowered with ki and are considered magical for damage reduction purposes.;
+CLASSLIST: Monk;
+LEVEL: 4;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Lay on Hands;
+FEATDESCRIPTION: Activate this paladin ability to apply a burst of holiness to your target, either healing an amount equal to your Charisma bonus times your paladin level - or dealing that much damage to an undead target.;
+CLASSLIST: Paladin;
+LEVEL: 2;
+ACQUIRE: Automatic;
+ICON: LayOnHandsIcon;
+
+FEATNAME: Leap Of Faith;
+FEATDESCRIPTION: You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk. Using this ability costs 5 spell points.;
+CLASSLIST: Favored Soul;
+LEVEL: 17;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Least Dragonmark of Healing;
+FEATDESCRIPTION: The bloodline of House Jorasco bestows on you a +2 bonus to your Heal skill. Activate this ability to cast Cure Light Wounds.;
+RACELIST: Halfling;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: DragonmarkHealing;
+
+FEATNAME: Least Dragonmark of Making;
+FEATDESCRIPTION: The bloodline of House Cannith bestows on you a +2 bonus to your Repair skill. Activate this ability to cast Repair Light Damage.;
+RACELIST: Human;
+LEVEL: 1;
+ACQUIRE: Train;
+LOCK: Least Dragonmark of Passage, Least Dragonmark of Sentinel;
+ICON: DragonmarkMaking;
+
+FEATNAME: Least Dragonmark of Passage;
+FEATDESCRIPTION: The bloodline of House Orien bestows on you a +2 bonus to your Balance skill. Activate this ability to cast Expeditious Retreat.;
+RACELIST: Human;
+LEVEL: 1;
+ACQUIRE: Train;
+LOCK: Least Dragonmark of Making, Least Dragonmark of Sentinel;
+ICON: DragonmarkPassage;
+
+FEATNAME: Least Dragonmark of Sentinel;
+FEATDESCRIPTION: The bloodline of House Deneith bestows on you a +2 bonus to your Intimidate skill. Activate this ability to cast Shield of Faith.;
+RACELIST: Human;
+LEVEL: 1;
+ACQUIRE: Train;
+LOCK: Least Dragonmark of Making, Least Dragonmark of Passage;
+ICON: DragonmarkSentinel;
+
+FEATNAME: Least Dragonmark of Shadow;
+FEATDESCRIPTION: The bloodline of House Phiarlan bestows on you a +2 bonus to your Hide skill. Activate this ability to cast Invisibility.;
+RACELIST: Elf;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: DragonmarkShadow;
+
+FEATNAME: Least Dragonmark of Warding;
+FEATDESCRIPTION: The bloodline of House Kundarak bestows on you a +2 bonus to your Search skill. Activate this ability to cast Fire Trap.;
+RACELIST: Dwarf;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: DragonmarkWarding;
+
+FEATNAME: Lesser Dragonmark of Healing;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Jorasco to cast Cure Serious Wounds.;
+RACELIST: Halfling;
+LEVEL: 6;
+ACQUIRE: Train;
+NEEDSALL: Feat Least Dragonmark of Healing;
+ICON: DragonmarkHealing;
+
+FEATNAME: Lesser Dragonmark of Making;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Cannith to cast Repair Serious Damage.;
+RACELIST: Human;
+LEVEL: 6;
+ACQUIRE: Train;
+NEEDSALL: Feat Least Dragonmark of Making;
+ICON: DragonmarkMaking;
+
+FEATNAME: Lesser Dragonmark of Passage;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Orien to cast Dimension Door.;
+RACELIST: Human;
+LEVEL: 6;
+ACQUIRE: Train;
+NEEDSALL: Feat Least Dragonmark of Passage;
+ICON: DragonmarkPassage;
+
+FEATNAME: Lesser Dragonmark of Sentinel;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Deneith to cast Protection from Energy.;
+RACELIST: Human;
+LEVEL: 6;
+ACQUIRE: Train;
+NEEDSALL: Feat Least Dragonmark of Sentinel;
+ICON: DragonmarkSentinel;
+
+FEATNAME: Lesser Dragonmark of Shadow;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Phiarlan to cast Displacement.;
+RACELIST: Elf;
+LEVEL: 6;
+ACQUIRE: Train;
+NEEDSALL: Feat Least Dragonmark of Shadow;
+ICON: DragonmarkShadow;
+
+FEATNAME: Lesser Dragonmark of Warding;
+FEATDESCRIPTION: Activate this ability to harness the bloodline of House Kundarak to cast Glyph of Warding.;
+RACELIST: Dwarf;
+LEVEL: 6;
+ACQUIRE: Train;
+NEEDSALL: Feat Least Dragonmark of Warding;
+ICON: DragonmarkWarding;
+
+FEATNAME: Light Armor Proficiency;
+FEATDESCRIPTION: You are proficient with light armor, and do not suffer armor penalties to your attack rolls when wearing light armor.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Automatic, Automatic, Automatic, Train, Train, Automatic, Automatic;
+ICON: LightArmorProfIcon;
+
+FEATNAME: Light Fortification;
+FEATDESCRIPTION: Warforged have a 25% immunity to critical hits and sneak attacks.;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Lightning Reflexes;
+FEATDESCRIPTION: Grants you a +2 bonus on your Reflex saves.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: LightningReflexesIcon;
+
+FEATNAME: Luck of Heroes;
+FEATDESCRIPTION: You survive when no one expects you to come through. You receive a +1 on all saves.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: LuckOfHeroesIcon;
+
+FEATNAME: Magical Training;
+FEATDESCRIPTION: Increases your maximum spell points, representing the training you received as a level 1 character in the arcane or divine arts.;
+CLASSLIST: Cleric, Wizard, Sorcerer, Favored Soul;
+LEVEL: 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic;
+ICON: MagicalTrainingIcon;
+
+FEATNAME: Manyshot;
+FEATDESCRIPTION: By activating this ability, you can shoot two arrows simultaneously for a time.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 6, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 17, Feat Point Blank Shot, Feat Rapid Shot, BAB 6;
+ICON: ManyShotIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Battleaxe;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a battleaxe.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Falchion;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a falchion.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Greataxe;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a greataxe.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Greatclub;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a greatclub.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Greatsword;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a greatsword.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Handaxe;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a handaxe.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Heavy Pick;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a heavy pick.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Kukri;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a kukri.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Light Hammer;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a light hammer.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Light Pick;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a light pick.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Longbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a longbow.;
+RACELIST: Elf;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Longsword;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a longsword.;
+RACELIST: Elf;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Automatic, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Maul;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a maul.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Rapier;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a rapier.;
+RACELIST: Elf, Drow;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Train, Automatic, Automatic, Train, Train, Train, Automatic, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Scimitar;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a scimitar.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Shortsword;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a shortsword.;
+RACELIST: Drow;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Train, Automatic, Automatic, Train, Train, Train, Automatic, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Shortbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a shortbow.;
+RACELIST: Elf;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Train, Automatic, Automatic, Train, Train, Train, Automatic, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Throwing Axe;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a throwing axe.;
+CLASSLIST: Fighter, Paladin, Barbarian, Rogue, Monk, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Throwing Hammer;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a throwing axe.;
+CLASSLIST: Fighter, Paladin, Barbarian, Rogue, Monk, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+PARENTHEADING: Martial Weapon Proficiency;
+FEATNAME: Warhammer;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a warhammer.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Train, Train, Train, Train, Train;
+ICON: MartialWeaponProfIcon;
+
+FEATNAME: Maximize Spell;
+FEATDESCRIPTION: While this metamagic feat is active, damage spells deal double damage, but they consume 25 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: MaximizeSpellIcon;
+
+FEATNAME: Meditation;
+FEATDESCRIPTION: Your enlightenment allows you to regenerate ki at a faster rate.;
+CLASSLIST: Monk;
+LEVEL: 2;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Medium Armor Proficiency;
+FEATDESCRIPTION: You are proficient with medium armor, and do not suffer armor penalties to your attack rolls when wearing medium armor.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, , Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: AutoNoPrereq, AutoNoPrereq, AutoNoPrereq, Train, Train, Train, AutoNoPrereq, Train, Train, Train, AutoNoPrereq;
+NEEDSALL: Feat Light Armor Proficiency;
+ICON: MedArmorProfIcon;
+
+FEATNAME: Mental Toughness;
+FEATDESCRIPTION: Increases your maximum spell points by 10 at first level, and 5 spell points for each additional level.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: MagicalTrainingIcon;
+
+FEATNAME: Mithral Body;
+FEATDESCRIPTION: Mithral body counts as light armor and grants a +5 armor bonus, but also provides a 15% arcane spell failure chance, -2 armor check penalty to certain skills, and a +5 maximum Dex bonus. This feat can only be purchased at 1st level.;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Creation;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Mithral Fluidity;
+FEATDESCRIPTION: The maximum Dex bonus you have is increased by 1, and the armor check penalties are decreased by 1.;
+FEATTAG: Multiple;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Train;
+NEEDSALL: Feat Mithral Body;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Mobile Spellcasting;
+FEATDESCRIPTION: You are able to move about slowly when casting a spell.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 8, 8, 3, 3, 4, 4, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Combat Casting, Ability Dexterity 13;
+ICON: MobleSpellcastingIcon;
+
+FEATNAME: Mobility;
+FEATDESCRIPTION: Adds a +4 bonus to Armor Class while tumbling.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Dodge;
+ICON: MobilityIcon;
+
+FEATNAME: Negotiator;
+FEATDESCRIPTION: You have a knack for gauging and swaying attitudes. You receive a +2 bonus on Diplomacy checks and Haggle checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: NegotiatorIcon;
+
+FEATNAME: Nimble Fingers;
+FEATDESCRIPTION: You are adept at manipulating small, delicate objects. You receive a +2 bonus on Disable Device checks and Open Locks checks.;
+CLASSLIST: Rogue;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: NimbleFingersIcon;
+
+FEATNAME: Orc and Goblin Bonus;
+FEATDESCRIPTION: Dwarves get a +1 bonus to attack against orcs and goblins.;
+RACELIST: Dwarf;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: DwarvenFeatsIcon;
+
+FEATNAME: Oversized Two Weapon Fighting;
+FEATDESCRIPTION: When wielding a one handed weapon in your off-hand, you take penalties for fighting with two weapons as if you were wielding a light weapon in your off-hand. (Essentially, you gain the +2 bonus for wielding a light weapon in your off-hand even if it’s not a light weapon).;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Strength 12, Feat Two Weapon Fighting;
+ICON: OversizedTwoWeaponFightingIcon;
+
+PARENTHEADING: Past Life;
+FEATNAME: Acolyte of Divine Secrets;
+FEATDESCRIPTION: You recall more about your past life as a favored soul. You have +2 to your Diplomacy skill and can call down the wrath of your former diety, producing an Avenging Light effect ten times per rest. (Activate this favored soul ability to cause a searing orb of radiant light to smite your target, dealing 1d8 hit points of light damage plus an additional 1d8 per three caster levels.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Favored Soul;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Arcane Initiate;
+FEATDESCRIPTION: You recall more about your past life as a wizard. You have +1 to the DC's of spells you cast and can cast the magic missile spell ten times per rest, creating a missile of magical energy that darts forth and unerringly strikes its target inflicting 1d4+1 force damage. For every 2 caster levels beyond first you gain an additional missile, maximum 10 missiles.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Wizard;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Arcane Prodigy;
+FEATDESCRIPTION: You recall more about your past life as a sorcerer. Your maximum spell points are increased by 10 at first level, and 5 spell points for each additional level and can produce random elemental damage spells ten times per rest. (Activate this sorcerer ability to blast a target with a ray of combined elements, doing 1d12 damage of a random elemental type plus and additional 1d12 per three caster levels on impact. A successful Reflex save reduces the damage by half.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Sorcerer;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Barbarian;
+FEATDESCRIPTION: You were a barbarian in a past life. You occasionally find yourself filled with a nearly irresistable urge to smash boxes. With your head. Each time you acquire this feat you gain 10 additional hit points. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Bard;
+FEATDESCRIPTION: You were a bard in a past life. You occasionally find yourself humming a merry tune. Each time you acquire this feat you gain +2 to saves vs. enchantments and illusions, and +1 Bardic Song usage. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Bardic Dilettante;
+FEATDESCRIPTION: You recall more about your past life as a bard. You have +1 to all Charisma based skills, +1 to the DC's of your Enchantment spells, and can Inspire Courage three times per rest. (Activate this bard ability to rally your companions, giving them a +1 morale bonus to saves against fear effects and a +1 morale bonus on attack and weapon damage rolls before enhancements.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Bard;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Berserker's Fury;
+FEATDESCRIPTION: You recall more about your past life as a barbarian. You gain +1 hit points per character level, have +2 to your Intimidate skill and can enter a barbarian rage once per rest. (Activate this barbarian ability to enter a bloodthirsty frenzy, granting you a +4 bonus to Will saves and a +2 penalty to AC. When the rage ends, however, you will lose the hit points granted to you by increased Constitution and become fatigued. Your rage will last for 30 seconds.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Barbarian;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Cleric;
+FEATDESCRIPTION: You were a cleric in a past life. You occasionally feel the presence of the divine. Each time you acquire this feat you gain +1 to the DC's of your Conjuration spells, +1 Turn Undead attempt per rest, and you Turn Undead as if you were two levels higher. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Disciple of the Fist;
+FEATDESCRIPTION: You recall more about your past life as a monk. You have +2 to your Concentration skill, deal increased unarmed damage (one step higher than normal on the unarmed combat chart), and can enter an evasive trance once per rest, granting the evasion feat for a short period of time. (When you make a successful Reflex save to avoid damage, you suffer no damage instead of half damage.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Monk;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Favored Soul;
+FEATDESCRIPTION: You were a favored soul in a past life. You occasionally find yourself wishing to leap off of tall things. Each time you acquire this feat you gain +1 to spell penetration checks and gain 20 additional spell points. (These spell points are only available if you are able to cast spells.) This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Fighter;
+FEATDESCRIPTION: You were a fighter in a past life. You occasionally find yourself filled with the urge to bark orders to your fellows in combat. Each time you acquire this feat you gain +1 to attack rolls and +1 to the DC's of your tactical feats. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Initiate of the Faith;
+FEATDESCRIPTION: You recall more about your past life as a cleric. You have +2 to your Heal skill, and can produce a Healing Word effect five times per rest. Positive energy is channeled to heal light wounds of your target or damage undead for 1d4 hit points plus an additiona 1d4 per two caster levels. Undead who make a successful Will save reduce the damage by half.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Cleric;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Monk;
+FEATDESCRIPTION: You were a monk in a past life. You occasionally find yourself contemplating the mysteries of life. Each time you acquire this feat you gain +1 to damage rolls. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Paladin;
+FEATDESCRIPTION: You were a paladin in a past life. You occasionally find yourself overcome with righteous fervor. Each time you acquire this feat you gain 5% more health when affecting by positive energy. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Ranger;
+FEATDESCRIPTION: You were a ranger in a past life. You occasionally find small animals in your backpack. Each time you acquire this feat you gain +2 damage with ranged weapons and +2 to elemental resistances. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Rogue;
+FEATDESCRIPTION: You were a rogue in a past life. You occasionally find yourself looking over your shoulder. Each time you acquire this feat you gain +2 to saves vs. traps and deal +1 damage when sneak attacking. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Sneak of Shadows;
+FEATDESCRIPTION: You recall more about your past life as a rogue. You have +1 to allskills and three times per rest you can skulk with the skill of your past life, gaining bonuses equal to your level to your hide and move silently skills, a +1 bonus to sneak attack damage for every two character levels, and a +1 bonus to hit with sneak attacks for every four levels.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Rogue;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Soldier of the Faith;
+FEATDESCRIPTION: You recall more about your past life as a paladin. You have +2 to your Heal skill, and can invoke Divine Favor upon yourself three times per rest. (Activate this paladin ability to call upon the strength and wisdom of a diety to grant a +1 luck bonus on weapon attack and damage. This bonus is increased by +1 for every 3 caster levels beyond level 3.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Paladin;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Sorcerer;
+FEATDESCRIPTION: You were a sorcerer in a past life. You occasionally find yourself daydreaming of dragons. Each time you acquire this feat you gain +1 to the DC's of your Evocation spells and gain 20 additional spell points. (These spell points are only available if you are able to cast spells.) This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Student of the Sword;
+FEATDESCRIPTION: You recall more about your past life as a fighter. You have +2 to your Intimidate skill, +1 to the Maximum Dexterity Bonus of armor and shields, and can remember your martial prowess three times per rest, increasing your base attack bonus to your level and granting +4 to hit.;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Fighter;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Warrior of the Wild;
+FEATDESCRIPTION: You recall more about your past life as a ranger. You have a +2 to your Spot skill and can produce a Barkskin effect three times per rest. (Activate this ranger ability to toughen the skin of an ally, giving a +2 natural armor bonus to AC with an additional +1 bonus for every 3 caster levels above 3rd, to a maximum of +5 at caster level 12th.);
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 3, 3, 3, 3, 3, 3;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Past Life: Ranger;
+ICON: NoImage;
+
+PARENTHEADING: Past Life;
+FEATNAME: Wizard;
+FEATDESCRIPTION: You were a wizard in a past life. You occasionally find yourself desiring a good book. Each time you acquire this feat you gain +2 to spell penetration checks and the DC's of wands you use. This feat can be stacked up to three times.;
+FEATTAG: Past Life;
+RACELIST: Human, Elf, Halfling, Dwarf, Warforged, Drow; 
+LEVEL: 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train;
+ICON: NoImage;
+
+FEATNAME: Philosophy - Path of Harmonious Balance;
+FEATDESCRIPTION: You have chosen to follow the path of light. You seek to be at harmony with the world, and your training will reflect your philosophy.;
+FEATTAG: Monk Path;
+CLASSLIST: Monk;
+LEVEL: 3;
+ACQUIRE: Train;
+ICON: NoImage;
+
+FEATNAME: Philosophy - Path of Inevitable Domination;
+FEATDESCRIPTION: You have chosen to follow the path of darkness. You seek to dominate the world, and your training will reflect your philosophy.;
+FEATTAG: Monk Path;
+CLASSLIST: Monk;
+LEVEL: 3;
+ACQUIRE: Train;
+ICON: NoImage;
+
+FEATNAME: Point Blank Shot;
+FEATDESCRIPTION: You gain +1 bonus on ranged attacks and damage within 30 feet.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: PointBlankShotIcon;
+
+FEATNAME: Poison Save Bonus;
+FEATDESCRIPTION: Dwarves are naturally resistant to poison, receiving a +2 bonus on saves against poisons.;
+RACELIST: Dwarf;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: DwarvenFeatsIcon;
+
+FEATNAME: Power Attack;
+FEATDESCRIPTION: While using Power Attack mode, you trade your attack bonus for extra damage.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Strength 13;
+ICON: PowerAttackIcon;
+
+FEATNAME: Power Critical;
+FEATDESCRIPTION: Provides a +4 bonus to confirm critical hits.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 4;
+NEEDSONE: Feat Weapon Focus: Bludgeoning Weapons, Feat Weapon Focus: Piercing Weapons, Feat Weapon Focus: Ranged Weapons, Feat Weapon Focus: Slashing Weapons, Feat Weapon Focus: Thrown Weapons;
+ICON: PowerCriticalPiercing;
+
+FEATNAME: Precise Shot;
+FEATDESCRIPTION: Your missile attacks may pass through other characters and monsters to strike their target.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Point Blank Shot;
+ICON: PreciseShotIcon;
+
+FEATNAME: Precision;
+FEATDESCRIPTION: While using Precision mode, you trade half of your damage for a +4 bonus to your attack rolls.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 13, BAB 1;
+ICON: PrecisionIcon;
+
+FEATNAME: Purity of Body;
+FEATDESCRIPTION: You have gained control over your body's immune system and are now unaffected by all diseases.;
+CLASSLIST: Monk;
+LEVEL: 5;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Quick Draw;
+FEATDESCRIPTION: You can switch weapons and change armors faster.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: QuickDrawIcon;
+
+FEATNAME: Quicken Spell;
+FEATDESCRIPTION: While this metamagic feat is active, spells cast twice as fast and cannot be interrupted by enemy attacks, but they consume 10 additional spell points.;
+FEATTAG: Metamagic;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: QuickenSpellIcon;
+
+FEATNAME: Quivering Palm;
+FEATDESCRIPTION: The monk delivers a fatal attack by sending waves of vibrations through the target.;
+CLASSLIST: Monk;
+LEVEL: 15;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Rage;
+FEATDESCRIPTION: Activate this barbarian ability to enter a bloodthirsty frenzy, granting you bonuses to Strength and Constitution. When the rage ends, however, you will lose the hit points granted to you by increased Constitution. Adds +4 to Strength, +4 to Constitution, +2 to Will saves, reduces AC by –2.;
+CLASSLIST: Barbarian;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: RageIcon;
+
+FEATNAME: Rapid Reload;
+FEATDESCRIPTION: You reload a crossbow faster than normal.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Simple Weapon Proficiency: Light Crossbow;
+ICON: RapidReloadIcon;
+
+FEATNAME: Rapid Shot;
+FEATDESCRIPTION: You can fire ranged attacks faster and reload faster when using a ranged weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 13, Feat Point Blank Shot;
+ICON: RapidShotIcon;
+
+FEATNAME: Remove Disease;
+FEATDESCRIPTION: A paladin can produce a remove disease effect, as the spell, once per rest period. She can use this ability one additional time per rest period for every three levels after 6th.;
+CLASSLIST: Paladin;
+LEVEL: 6;
+ACQUIRE: Automatic;
+ICON: RemoveDiseaseIcon;
+
+FEATNAME: Resilience;
+FEATDESCRIPTION: While using Resilience mode, you trade attack bonus and half of your damage for a bonus to saving throws.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Constitution 13, BAB 1;
+ICON: ResillianceIcon;
+
+FEATNAME: Resist Poison;
+FEATDESCRIPTION: You are especially resistant to poison thanks to years of training. You receive a +4 bonus on all saves against poison.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: ResistPoisonIcon;
+
+FEATNAME: Sap;
+FEATDESCRIPTION: Using this attack, you may render the target briefly senseless, though it will become active if damaged again. Some creatures may be immune to the sap effect.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SapIcon;
+
+FEATNAME: Self Sufficient;
+FEATDESCRIPTION: You can take care of yourself, and frequently others too. You receive a +2 bonus on Heal checks and Repair checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SelfSufficientIcon;
+
+FEATNAME: Shield Mastery;
+FEATDESCRIPTION: Increases the amount of damage you can absorb when defending with a shield.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Shield Proficiency (General);
+ICON: ShieldMasteryIcon;
+
+FEATNAME: Shield Proficiency (General);
+FEATDESCRIPTION: You are proficient with bucklers, small, and large shields.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Train, Automatic, Automatic, Train, Automatic, Automatic;
+ICON: ShieldProfIcon;
+
+FEATNAME: Shot on the Run;
+FEATDESCRIPTION: You can move quickly before and after ranged attacks, and while reloading.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 13, Feat Point Blank Shot, Feat Mobility, BAB 4;
+ICON: ShotOnTheRunIcon;
+
+FEATNAME: Simple Weapon Proficiency;
+FEATDESCRIPTION: You do not suffer an attack penalty for simple weapons.;
+FEATTAG: Parent Feat;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Train, Automatic, Automatic, Automatic, Train, Automatic, Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Club;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a club.;
+CLASSLIST: Monk, Wizard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Dagger;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a dagger.;
+CLASSLIST: Monk, Wizard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Dart;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a dart.;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Heavy Crossbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a heavy crossbow.;
+CLASSLIST: Monk, Wizard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Heavy Mace;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a heavy mace.;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Light Crossbow;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a light crossbow.;
+CLASSLIST: Monk, Wizard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Light Mace;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a light mace.;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Morningstar;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a morningstar.;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Quarterstaff;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a quarterstaff.;
+CLASSLIST: Monk, Wizard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Sickle;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a sickle.;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Throwing Dagger;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for using a throwing dagger.;
+CLASSLIST: Wizard;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Simple Weapon Proficiency;
+FEATNAME: Unarmed;
+FEATDESCRIPTION: You do not suffer a -4 attack penalty for making unarmed attacks.;
+CLASSLIST: Monk, Wizard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SimpleWeaponProfIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Balance;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Balance.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Bluff;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Bluff.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Concentration;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Concentration.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Diplomacy;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Diplomacy.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Disable Device;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Disable Device.;
+CLASSLIST: Rogue;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Haggle;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Haggle.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Heal;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Heal.;
+CLASSLIST: Fighter, Paladin, Barbarian, Train, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Hide;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Hide.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Intimidate;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Intimidate.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Jump;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Jump.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Listen;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Listen.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Favored Soul;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Move Silently;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Move Silently.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Open Lock;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Open Lock.;
+CLASSLIST: Rogue;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Perform;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Perform.;
+CLASSLIST: Bard;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Repair;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Repair.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Search;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Search.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Spot;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Spot.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Swim;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Swim.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Tumble;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Tumble.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+PARENTHEADING: Skill Focus;
+FEATNAME: Use Magic Device;
+FEATDESCRIPTION: Grants a +3 bonus to all skill checks for Use Magic Device.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SkillFocusIcon;
+
+FEATNAME: Skill Mastery;
+FEATDESCRIPTION: A rogue with this ability gains +1 to all skills. This ability may be taken multiple times.;
+FEATTAG: Rogue Bonus, Multiple;
+CLASSLIST: Rogue;
+LEVEL: 10;
+ACQUIRE: Train;
+ICON: SkillFocusIcon;
+
+FEATNAME: Slicing Blow;
+FEATDESCRIPTION: Using this attack, your attack may deal its initial damage plus some additional damage as the target bleeds. Some creatures may be immune to the bleeding effect.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SlicingBlowIcon;
+
+FEATNAME: Slippery Mind;
+FEATDESCRIPTION: Grants the rogue a second chance to avoid harmful enchantments. Upon failure of a Will Save vs. Enchantments, the rogue immediately receives a second attempt at the saving throw.;
+FEATTAG: Rogue Bonus;
+CLASSLIST: Rogue;
+LEVEL: 10;
+ACQUIRE: Train;
+ICON: MagicalTrainingIcon;
+
+FEATNAME: Slow Fall;
+FEATDESCRIPTION: Your focus allows you to bend nature around you to make gravity have less effect. This is an active feat, and can be turned off should you desire normal gravity to affect you.;
+CLASSLIST: Monk;
+LEVEL: 4;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Smite Evil;
+FEATDESCRIPTION: Using this attack, you call on the paladin's ability to strike down evil creatures, adding charisma bonus to attack and damage against an evil target.;
+CLASSLIST: Paladin;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: SmiteEvilIcon;
+
+FEATNAME: Snake Blood;
+FEATDESCRIPTION: The taint of the serpent-like yuan-ti runs in your veins. You receive a +2 bonus on poison saves and a +1 bonus on all Reflex saves.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: SnakeBloodIcon;
+
+FEATNAME: Sneak;
+FEATDESCRIPTION: Player becomes invisible to all monsters that fail Spot and Listen checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic;
+ICON: SneakIcon;
+
+FEATNAME: Sneak Attack;
+FEATDESCRIPTION: Adds 1d6 damage when attacking enemies while hidden or if enemy is engaged in melee combat with another character. Can be used with ranged weapons within 30 ft. Benefit increases by 1d6 at levels 3, 5, 7, 9, 11, 13, 15, 17 and 19. Does not affect undead, plants, constructs or oozes.;
+CLASSLIST: Rogue;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: SneakAttackIcon;
+
+FEATNAME: Song of Freedom;
+FEATDESCRIPTION: Activate this bard ability to create an effect equivalent to the break enchantment spell on one of your allies. Requires 15 ranks of the Perform skill.;
+CLASSLIST: Bard;
+LEVEL: 12;
+ACQUIRE: Automatic;
+ICON: SongOfFreedom;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Abjuration;
+FEATDESCRIPTION: Your spells of the Abjuration school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Conjuration;
+FEATDESCRIPTION: Your spells of the Conjuration school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Enchantment;
+FEATDESCRIPTION: Your spells of the Enchantment school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Evocation;
+FEATDESCRIPTION: Your spells of the Evocation school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Illusion;
+FEATDESCRIPTION: Your spells of the Illusion school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Necromancy;
+FEATDESCRIPTION: Your spells of the Necromancy school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+PARENTHEADING: Spell Focus;
+FEATNAME: Transmutation;
+FEATDESCRIPTION: Your spells of the Transmutation school are harder to resist, receiving a +1 bonus on save DCs.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellFocusIcon;
+
+FEATNAME: Spell Penetration;
+FEATDESCRIPTION: Adds +2 to your caster level check for defeating spell resistance.;
+CLASSLIST: Paladin, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 4, 4, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train;
+ICON: SpellPenetrationIcon;
+
+FEATNAME: Spell Save Bonus;
+FEATDESCRIPTION: $RACE are naturally resistant to spells, receiving a +2 bonus on Will saves against spell effects.;
+RACELIST: Dwarf, Drow;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: SpellSaveBonusIcon;
+
+FEATNAME: Spring Attack;
+FEATDESCRIPTION: You suffer no penalty to your attack roll when moving and attacking.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Mobility, BAB 4;
+ICON: SpringAttackIcon;
+
+FEATNAME: Stealthy;
+FEATDESCRIPTION: You are particularly good at avoiding notice. You receive a +2 bonus on Hide checks and Move Silently checks.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: StealthyIcon;
+
+FEATNAME: Still Mind;
+FEATDESCRIPTION: Your training and meditation improve your resistance to mind-affecting attacks, granting you a +2 bonus on saving throws against enchantments.;
+CLASSLIST: Monk;
+LEVEL: 3;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Stunning Blow;
+FEATDESCRIPTION: Using this attack, you may stun the target for a few seconds. Some creatures may be immune to the stun effect.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: StunningBlowIcon;
+
+FEATNAME: Stunning Fist;
+FEATDESCRIPTION: A swift unarmed attack to vulnerable areas that cause your target to be stunned for a short period of time.;
+FEATTAG: Monk Bonus;
+CLASSLIST: Monk;
+LEVEL: 1;
+ACQUIRE: Train;
+ICON: NoImage;
+
+FEATNAME: Suggestion;
+FEATDESCRIPTION: A bard can make a suggestion (as the spell) to a creature that he has already fascinated (see above). Using this ability does not break the bard’s concentration on the fascinate effect, and it does not allow a second saving throw against the fascinate effect.;
+CLASSLIST: Bard;
+LEVEL: 6;
+ACQUIRE: Automatic;
+ICON: SuggestionIcon;
+
+FEATNAME: Sunder;
+FEATDESCRIPTION: Using this attack, you may reduce the target's Armor Class for a short time. Some creatures may be immune to the sunder effect.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic;
+NEEDSALL: BAB 1;
+ICON: SunderIcon;
+
+PARENTHEADING: Superior Weapon Focus;
+FEATNAME: Bludgeoning Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a bludgeoning weapon. This bonus stacks with the Weapon Focus and Greater Weapon Focus feats.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 16;
+ACQUIRE: Train;
+NEEDSALL: Feat Greater Weapon Specialization: Bludgeoning Weapons, Feat Greater Weapon Focus: Bludgeoning Weapons;
+ICON: NoImage;
+
+PARENTHEADING: Superior Weapon Focus;
+FEATNAME: Piercing Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a piercing weapon. This bonus stacks with the Weapon Focus and Greater Weapon Focus feats.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 16;
+ACQUIRE: Train;
+NEEDSALL: Feat Greater Weapon Specialization: Piercing Weapons, Feat Greater Weapon Focus: Piercing Weapons;
+ICON: NoImage;
+
+PARENTHEADING: Superior Weapon Focus;
+FEATNAME: Ranged Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a ranged weapon. This bonus stacks with the Weapon Focus and Greater Weapon Focus feats.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 16;
+ACQUIRE: Train;
+NEEDSALL: Feat Greater Weapon Specialization: Ranged Weapons, Feat Greater Weapon Focus: Ranged Weapons;
+ICON: NoImage;
+
+PARENTHEADING: Superior Weapon Focus;
+FEATNAME: Slashing Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a slashing weapon. This bonus stacks with the Weapon Focus and Greater Weapon Focus feats.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 16;
+ACQUIRE: Train;
+NEEDSALL: Feat Greater Weapon Specialization: Slashing Weapons, Feat Greater Weapon Focus: Slashing Weapons;
+ICON: NoImage;
+
+PARENTHEADING: Superior Weapon Focus;
+FEATNAME: Thrown Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a thrown weapon. This bonus stacks with the Weapon Focus and Greater Weapon Focus feats.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 16;
+ACQUIRE: Train;
+NEEDSALL: Feat Greater Weapon Specialization: Thrown Weapons, Feat Greater Weapon Focus: Thrown Weapons;
+ICON: NoImage;
+
+FEATNAME: Toughness;
+FEATDESCRIPTION: Increases your hit points by +3 at first level, and 1 additional hit point for each additional level.;
+FEATTAG: Multiple, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+ICON: ToughnessIcon;
+
+FEATNAME: Tower Shield Proficiency;
+FEATDESCRIPTION: You are proficient with tower shields.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: AutoNoPrereq, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Shield Proficiency (General);
+ICON: TowerShieldProfIcon;
+
+FEATNAME: Trap Sense;
+FEATDESCRIPTION: Traps. +1 Reflex save vs. traps, +1 AC vs. trap attacks. This feat advances at levels 6, 9, 12, 15 and 18.;
+CLASSLIST: Barbarian, Rogue;
+LEVEL: 3, 3;
+ACQUIRE: Automatic, Automatic;
+ICON: TrapSenseIcon;
+
+FEATNAME: Trapfinding;
+FEATDESCRIPTION: Rogues can use Search skill to locate traps when the trap has a Difficulty Class higher than 20.;
+CLASSLIST: Rogue;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: TrapFindingIcon;
+
+FEATNAME: Trip;
+FEATDESCRIPTION: Using this attack, you may trip the target, rendering it prone. Some creatures may be immune to this effect.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic, Automatic;
+NEEDSALL: BAB 1;
+ICON: TripIcon;
+
+FEATNAME: Turn Undead;
+FEATDESCRIPTION: Character can turn undead (Charisma modifier +3) times per day.;
+CLASSLIST: Paladin, Cleric;
+LEVEL: 4, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: TurnUndeadIcon;
+
+FEATNAME: Two Handed Fighting;
+FEATDESCRIPTION: Increases the chance of glancing blows when wielding a two-handed weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Strength 15;
+ICON: TwoHandedFightingIcon;
+
+FEATNAME: Two Weapon Blocking;
+FEATDESCRIPTION: Increases the amount of damage you can block when defending with two weapons.;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 15, Feat Two Weapon Fighting;
+ICON: TwoWeaponBlockingIcon;
+
+FEATNAME: Two Weapon Defense;
+FEATDESCRIPTION: Grants you a +1 bonus to your AC when you wield two weapons.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 15, Feat Two Weapon Fighting;
+ICON: TwoWeaponBlockingIcon;
+
+FEATNAME: Two Weapon Fighting;
+FEATDESCRIPTION: Reduces the penalty for fighting with two weapons.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, AutoNoPrereq, Train, Train, Train, Train, Train;
+NEEDSALL: Ability Dexterity 15;
+ICON: TwoWeaponFightingIcon;
+
+FEATNAME: Unarmed Strike;
+FEATDESCRIPTION: While centered (unarmored, unencumbered, and wielding monk weapons, your fists and feat are lethal weapons.;
+CLASSLIST: Monk;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Uncanny Dodge;
+FEATDESCRIPTION: Activate this ability to gain a temporary bonus to your AC and Reflex saves.;
+CLASSLIST: Barbarian, Rogue;
+LEVEL: 2, 4;
+ACQUIRE: Automatic, Automatic;
+ICON: UncannyDodgeIcon;
+
+FEATNAME: Warforged Resistances;
+FEATDESCRIPTION: Warforged are naturally immune to sleep, energy drain, nausea, sickness, exhaustion, poison, disease, and paralysis effects.;
+RACELIST: Warforged;
+LEVEL: 1;
+ACQUIRE: Automatic;
+ICON: WarforgedFeatIcon;
+
+FEATNAME: Weapon Finesse;
+FEATDESCRIPTION: You use your Dexterity bonus instead of Strength bonus to determine bonus to attack with all light weapons and rapiers.;
+FEATTAG: Fighter Bonus, Monk Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: WeaponFinesseIcon;
+
+PARENTHEADING: Weapon Focus;
+FEATNAME: Bludgeoning Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a bludgeoning weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Focus;
+FEATNAME: Piercing Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a piercing weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Focus;
+FEATNAME: Ranged Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a ranged weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Focus;
+FEATNAME: Slashing Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a slashing weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Focus;
+FEATNAME: Thrown Weapons;
+FEATDESCRIPTION: Provides a +1 bonus to attack rolls when using a thrown weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: BAB 1;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Specialization;
+FEATNAME: Bludgeoning Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a bludgeoning weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 4;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Bludgeoning Weapons;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Specialization;
+FEATNAME: Piercing Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a piercing weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 4;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Piercing Weapons;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Specialization;
+FEATNAME: Ranged Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a ranged weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 4;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Ranged Weapons;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Specialization;
+FEATNAME: Slashing Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a slashing weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 4;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Slashing Weapons;
+ICON: WeaponFocusIcon;
+
+PARENTHEADING: Weapon Specialization;
+FEATNAME: Thrown Weapons;
+FEATDESCRIPTION: Provides a +2 bonus to damage rolls when using a thrown weapon.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter;
+LEVEL: 4;
+ACQUIRE: Train;
+NEEDSALL: Feat Weapon Focus: Thrown Weapons;
+ICON: WeaponFocusIcon;
+
+FEATNAME: Whirlwind Attack;
+FEATDESCRIPTION: Activate this ability to attack all enemies in a 360 degree arc around you.;
+FEATTAG: Fighter Bonus;
+CLASSLIST: Fighter, Paladin, Barbarian, Monk, Rogue, Ranger, Cleric, Wizard, Sorcerer, Bard, Favored Soul;
+LEVEL: 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1;
+ACQUIRE: Train, Train, Train, Train, Train, Train, Train, Train, Train, Train, Train;
+NEEDSALL: Feat Combat Expertise, Feat Spring Attack, BAB 4;
+ICON: WhirlwindAttackIcon;
+
+FEATNAME: Wholeness of Body;
+FEATDESCRIPTION: Your enlightenment allows you to heal your own wounds.;
+CLASSLIST: Monk;
+LEVEL: 7;
+ACQUIRE: Automatic;
+ICON: NoImage;
+
+FEATNAME: Wild Empathy;
+FEATDESCRIPTION: Activate this ranger ability to lower an animal's or beast's aggression.;
+CLASSLIST: Ranger, Bard;
+LEVEL: 1, 1;
+ACQUIRE: Automatic, Automatic;
+ICON: WildEmpathyIcon;

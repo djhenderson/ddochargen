@@ -3,6 +3,7 @@ DESCRIPTION: Allows you to recover your balance when knocked down.;
 KEYABILITY: Dex;
 PRIMARY: Monk, Rogue, Bard;
 CROSS: Fighter, Paladin, Barbarian, Ranger, Cleric, Wizard, Sorcerer, Favored Soul;
+USABLEUNTRAINED: No;
 ICON: BalanceIcon;
 
 SKILLNAME: Bluff;
@@ -30,6 +31,7 @@ SKILLNAME: Disable Device;
 DESCRIPTION: Allows you the ability to disarm traps.;
 KEYABILITY: Int;
 PRIMARY: Rogue;
+USABLEUNTRAINED: No;
 ICON: DisableDeviceIcon;
 
 SKILLNAME: Haggle;
@@ -85,6 +87,7 @@ SKILLNAME: Open Lock;
 DESCRIPTION: Allows you to attempt to open locked doors, chests, and other objects.;
 KEYABILITY: Dex;
 PRIMARY: Rogue;
+USABLEUNTRAINED: No;
 ICON: OpenLockIcon;
 
 SKILLNAME: Perform;
@@ -125,6 +128,7 @@ SKILLNAME: Tumble;
 DESCRIPTION: Allows you to tumble and roll away from attacking enemies.;
 KEYABILITY: Dex;
 PRIMARY: Monk, Rogue, Bard;
+USABLEUNTRAINED: No;
 ICON: TumbleIcon;
 
 SKILLNAME: Use Magic Device;

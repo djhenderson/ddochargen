@@ -1,22 +1,26 @@
 
-class Skill
-  attr_accessor :name, :related_attribute, :description, :usable_untrained
+module DDOChargen
 
-  def initialize(name = "", relatedattr = "", usable = true)
-    @name = name
-    @related_attribute = relatedattr
-    @usable_untrained = usable
+  class Skill
+    attr_accessor :name, :related_attribute, :description, :usable_untrained
+
+    def initialize(name = "", relatedattr = "", usable = true)
+      @name = name
+      @related_attribute = relatedattr
+      @usable_untrained = usable
+    end
+
+    def usable_untrained?
+      return @usable_untrained
+    end
+
+    def ==(skill)
+      return (skill.to_s.downcase == self.to_s.downcase)
+    end
+
+    def to_s
+      return @name
+    end
   end
 
-  def usable_untrained?
-    return @usable_untrained
-  end
-
-  def ==(skill)
-    return (skill.name == @name)
-  end
-
-  def to_s
-    return "Name = #{name}, Related Attribute = #{related_attribute}, Description = #{description}, Usable Untrained = #{usable_untrained}"
-  end
 end
