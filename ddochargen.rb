@@ -8,6 +8,7 @@ db.backend.source = "./data/"
 db.load()
 
 puts db.skills
+puts db.races
 
 char = Character.new()
 char.first_name = "Lelah"

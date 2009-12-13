@@ -4,7 +4,7 @@ require "lib/RonHilerBackend.rb"
 
 class DDODatabase
 
-  attr_accessor :skills, :backend
+  attr_accessor :skills, :races, :backend
 
   def initialize ( be = RonHilerBackend.new() ) 
     @backend = be
@@ -12,6 +12,7 @@ class DDODatabase
 
   def load
     @skills = backend.load_skills()
+    @races = backend.load_races()
   end
 
 end

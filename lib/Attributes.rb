@@ -65,4 +65,9 @@ class Attributes
     set(what, value-1)
   end
 
+  def to_s
+    return "Strength = #{strength}, Dexterity = #{dexterity}, Constitution = #{constitution}, " +
+      "Intelligence = #{intelligence}, Wisdom = #{wisdom}, Charisma = #{charisma}"
+  end
+
 end

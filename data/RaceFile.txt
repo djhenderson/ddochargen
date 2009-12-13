@@ -1,0 +1,151 @@
+RACENAME: Human;
+DESCRIPTION: {\b {\cf1 1 bonus feat at first level:}}
+ Humans are quick to master specialized tasks and are varied in their talents.\par
+{\b {\cf1 4 extra skill points at first level and 1 extra skill point at each additional level:}}
+ Humans are versatile and capable.\par\par
+Humans are the most adaptable and flexible of the common races. They are diverse in their
+ morals, customs, and habits. Hardy or fine, light-skinned or dark, showy or austere, devout or
+ impious, humans run the gamut.\par\par
+Human adventurers are the most audacious, daring, and ambitious members of an audacious, daring,
+ and ambitious race. A human can earn glory in the eyes of his fellows by amassing power, wealth,
+ and fame. Humans, more than other people, champion causes rather than territories, factions,
+ or groups.\par\par
+Humans, although relatively young in comparison to most other races, dominate Eberron. Human culture
+ was born on the distant continent of Sarlona, with the first settlers sailing from Sarlona's western
+ coast to the region of Khorvaire now called the Lhazaar Principalities. From there, they spread across
+ continent of Kharvaire, disrupting the placid elven empire of Aerenal and leaving ruined goblin
+ kingdoms in their wake. Today, human contact has extended over most of the world, recently reaching
+ the distant continent of Xen'drik. Humans are affiliated with the House Deneith in Stormreach.;
+BASESTATS: 8, 8, 8, 8, 8, 8;
+FEATURES: ExtraSkillPoint, ExtraFeat, 32pt;
+
+RACENAME: Elf;
+DESCRIPTION: {\b {\cf1 +2 Dexterity, -2 Constitution:}}
+ Elves are graceful but frail, and are better at stealth and archery.\par
+{\b {\cf1 Immune to magic sleep effects and +2 saving throw bonus against Enchantment spells:}}
+ Elves do not sleep, but rest while meditating in a deep trance.\par
+{\b {\cf1 +2 bonus on Listen, Search, and Spot checks:}}
+ An Elf's senses are extremely sensitive.\par
+{\b {\cf1 Bonus Martial Weapon Proficiency Feats:}}
+ Elves are proficient with the longsword, rapier, longbow, and shortsword.\par\par
+Elves are well known for their poetry, dance, song, lore, and magical arts. Elves favor things of
+ nature and simple beauty. When danger threatens their woodland homes, however, elves reveal a more
+ martial side, demonstrating their skill with sword, bow and battle strategy.\par\par
+Elves mingle freely in human lands, always welcome yet never at home there. Life among humans moves
+ at a pace that elves dislike: regimented from day to day but changing from decade to decade. Elves
+ among humans, therefore, find careers that allow them to wander freely and set their own pace.
+ Elves also enjoy demonstrating their prowess with the sword and bow, and they enjoy gaining greater
+ magical powers. Adventuring allows them to improve their skill in both.\par\par
+The elves of Eberron were born on the mysterious southern continent of Xen'drik, where they were
+ slaves of the giant kingdoms. Tens of thousands of years ago, elf slaves rebelled against their masters
+ and eventually left Xen'drik entirely. They settled in the fertile tropical rain forest of Aerenal,
+ a large island-continent to the southeast of Khorvaire. After the Last War came to an end, elven
+ explorers joined in the rediscovery of Xen'drik. Elves are affiliated with the House Phiarlan
+ in Stormreach.;
+BASESTATS: 8, 10, 6, 8, 8, 8;
+FEATURES: 32pt;
+
+RACENAME: Halfling;
+DESCRIPTION: {\b {\cf1 +2 Dexterity, -2 Strength:}}
+ Halflings are quick, agile, and good with ranged weapons, but not as strong as other humanoids.\par
+{\b {\cf1 +1 Armor Class bonus, +1 attack roll bonus, +4 bonus on Hide checks, and 3/4 carrying limit:}}
+ As Small creatures, Halflings are harder to hit and hide better, but can carry less than the other races.\par
+{\b {\cf1 +2 bonus on Jump, Listen, and Move Silently checks:}}
+ Halflings are surefooted and nimble.\par
+{\b {\cf1 +1 bonus on all saving throws and +2 saving throw bonus against Fear:}}
+ Halflings are surprisingly capable at avoiding mishaps.\par
+{\b {\cf1 +1 attack roll bonus with thrown weapons:}}
+ Throwing stones is a universal sport among Halflings and they have excellent aim.\par\par
+Halflings are clever, capable opportunists. Depending on the clan, halflings might be reliable, hard-working
+ citizens, or they might be thieves just waiting for the opportunity to make a big score and disappear in the
+ dead of night.\par\par
+Halfling adventurers are typically looking for a way to use their skills to gain wealth or status. The distinction
+ between a halfling adventurer and a halfling just out to make a big score can be blurry. While halfling
+ opportunism can sometimes look like larceny or fraud to others, a halfling adventurer who learns to trust
+ her fellows is worthy of trust in return.\par\par
+In the world of Eberron, halflings are nomads who ride domesticated dinosaurs across the wide Talenta Plains. The
+ heritage of the nomad also serves more urbanized halflings well, and halflings have established themselves
+ across Eberron as merchants, politicians, barristers, healers, and criminals. The tribal nomads of the plains
+ can sometimes be found in the cities, but often the halflings of the cities blend in with the rest of the
+ population and display only the occasional reminder of their roots. Halflings are affiliated with the House
+ Jorasco in Stormreach.;
+BASESTATS: 6, 10, 8, 8, 8, 8;
+FEATURES: 32pt;
+
+RACENAME: Dwarf;
+DESCRIPTION: {\b {\cf1 +2 Constitution, -2 Charisma:}}
+ Dwarves are stout and tough, but tend to be gruff and reserved.\par
+{\b {\cf1 +2 bonus on Search checks:}}
+ The Stonecunning ability gives a dwarf a sixth sense about stonework.\par
+{\b {\cf1 +4 bonus on Balance checks:}}
+ Dwarves are exceptionally stable on their feet.\par
+{\b {\cf1 +2 saving throw bonus against poison:}}
+ Dwarves are hardy and resistant to toxin.\par
+{\b {\cf1 Dwarven Waraxes as Martial Weapons:}}
+ Dwarves do not consider dwarven waraxes to be exotic weapons.\par\par
+Dwarves are known for their skill in warfare, their ability to withstand physical and magical punishment,
+ their knowledge of the earth's secrets, their hard work, and their capacity for drinking ale.\par\par
+A dwarf adventurer may be motivated by crusading zeal, a love of excitement, or simple greed. As long as
+ his accomplishments bring honor to his clan, his deeds earn him respect and status. Defeating giants and
+ claiming powerful magic weapons are sure ways for a dwarf to earn the adulation of other dwarves.\par\par
+The dwarven homeland in Eberron is the Mror Holds, a loose-knit federation of dwarf clans in the mountainous
+ terrain in the east of Khorvaire. The dwarves have never had a unified empire and thus have never risen to
+ the prominence of the elves or humans, though their control of mineral wealth has always made them important
+ allies of the greater powers. Their mysterious kingdoms, carves out from the insides of mountains, are
+ renowned for the marvelous treasures that they produce as gifts or for trade. Dwarves are affiliated with
+ the House Kundarak in Stormreach.;
+BASESTATS: 8, 8, 10, 8, 8, 6;
+FEATURES: 32pt;
+
+RACENAME: Warforged;
+DESCRIPTION: {\b {\cf1 +2 Constitution, -2 Wisdom, -2 Charisma:}}
+ Warforged are resilient and powerful, but their difficulty in relating to other creatures makes them seem
+ aloof or even hostile.\par
+{\b {\cf1 Resistant to poison, sleep effects, paralysis, disease, nausea, fatigue, exhaustion:}}
+ As living constructs, warforged have a natural resistance to the sickened condition.\par
+{\b {\cf1 Stabilized by Repair skill, Repair Damage Spells regenerate, Cure Wounds Spells half as
+ effective:}}
+ Damage dealt to a warforged can be healed by a Repair Light Damage spell and warforged are stabilized
+ by the Repair skill, however, Cure Light Wounds spells and potions only provide half their normal effect.\par
+{\b {\cf1 +2 armor bonus and 5% chance arcane spell failure:}}
+ The Composite Plating used to build a warforged takes the place of armor or robes and interferes slightly
+ with spell casting.\par
+{\b {\cf1 Light Fortification:}}
+ There is a 25% chance that when a critical hit or sneak attack is scored, it is negated and damage is rolled
+ normally.\par\par
+Warforged are constructs built to fight in the Last War and the humanoid races of Eberron regard warforged as
+ unpleasant reminders of the brutality of that war. As they strive to be a part of society, warforged struggle
+ to find ways to relate to the other races that created them.\par\par
+Adventuring is one way that warforged can fit into the world, at least as well as any adventurer ever does. In
+ the wilds of Xen'drik, the ancient continent of secrets, few people care whether you were born or made, as long
+ as you can help keep your companions alive. A fairly large number of warforged chose an adventuring life to
+ escape from the confines of a society that they didn't create and at the same time engage in some meaningful
+ activity\par\par
+Originally intended as nothing more than mindless war machines, the warforged aquired sentience due to the arcane
+ experiments intended to improve these weapons of destruction. Through these experiments, the warforged moved
+ away from being true constructs and became alive. The basic and most plentiful warforged are just slightly larger
+ than humans. Larger varieties of warforged-like constructs can also be encountered, as these remnants of the
+ Last War still exist.;
+BASESTATS: 8, 8, 10, 8, 6, 6;
+FEATURES: 32pt;
+
+RACENAME: Drow;
+DESCRIPTION: {\b {\cf1 +2 Dexterity, +2 Intelligence, +2 Charisma, -2 Constitution:}}
+ Also known as Dark Elves, Drow are nimble, clever, and magnetic, but physically delicate.\par
+ {\b {\cf1 Magical Defense:}} Drow are immune to magic sleep effects, and they gain a +2 saving throw
+ bonus against Enchantment spells and an additional +2 Will save bonus against spells and spell-like
+ effects. Finally, drow characters begin play with Spell Resistance 11, and this resistance can be
+ increased as the drow gains levels.\par
+ {\b {\cf1 +2 bonus on Listen, Search, and Spot Checks:}} a drow's senses are extremely sensitive.\par
+ {\b {\cf1 Bonus weapon proficiency feats:}} Drow are proficient with the rapier, shortsword, and shuriken.\par\par
+Most drow choose a life of adventure out of necessity, given the dangers of their homeland. Still, they
+ greatly desire personal power, and many drow take up the mantle of adventurer seeking to satisfy their ambitions.
+ Most drow follow the evil scorpion god Vulkoor, though exposure to the cultures of Stormreach has brought a few
+ of them to less malevolent deities.\par\par
+The elves of Eberron were born on the mysterious southern continent of Xen'drik, where they were
+ slaves of the giant kingdoms. Tens of thousands of years ago, elf slaves rebelled against their masters.
+ Unlike other elf races who fled the continent, the drow stayed behind on Xen'drik. Today most of the drow
+ live within the ancient giant ruins hoping to take vengeance on their former masters and to learn the
+ secrets of the giants' long-lost might. The drow believe that they alone preserve the dignity and valor
+ of the elf race, dismissing the rebels who fled to Aerenal and their Valenar heirs.; 
+BASESTATS: 8, 10, 6, 10, 8, 10;
