@@ -523,6 +523,7 @@ FEATDESCRIPTION:  Activate this bard ability to make your foes stop what they're
 CLASSLIST: Bard;
 LEVEL: 1;
 ACQUIRE: Automatic;
+NEEDSALL: Skill Perform : 3;
 ICON: FascinateIcon;
 
 FEATNAME: Fast Movement;
@@ -718,6 +719,14 @@ CLASSLIST: Ranger;
 LEVEL: 1;
 ACQUIRE: Train;
 ICON: FavoredEnemyMagicalBeastIcon;
+
+FEATNAME: Mass Suggestion;
+FEATDESCRIPTION: Activate this bard ability to charm multiple fascinated foes for a short time. Requires 21 trained ranks (not total mod) of the Perform skill to use.;
+CLASSLIST: Bard;
+LEVEL: 18;
+ACQUIRE: Automatic;
+NEEDSALL: Skill Perform : 21;
+ICON: MassSuggestionIcon;
 
 PARENTHEADING: Favored Enemy;
 FEATNAME: Monstrous Humanoid;
@@ -1330,6 +1339,7 @@ FEATDESCRIPTION: A bard can use music to help an ally succeed at a task. Ally ga
 CLASSLIST: Bard;
 LEVEL: 3;
 ACQUIRE: Automatic;
+NEEDSALL: Skill Perform: 6;
 ICON: InspireCompetenceIcon;
 
 FEATNAME: Inspire Courage;
@@ -1337,6 +1347,7 @@ FEATDESCRIPTION: A bard can use song or poetics to inspire courage in his allies
 CLASSLIST: Bard;
 LEVEL: 1;
 ACQUIRE: Automatic;
+NEEDSALL: Skill Perform : 3;
 ICON: InspireCourageIcon;
 
 FEATNAME: Inspire Greatness;
@@ -1345,6 +1356,14 @@ CLASSLIST: Bard;
 LEVEL: 9;
 ACQUIRE: Automatic;
 ICON: InspireGreatnessIcon;
+
+FEATNAME: Inspire Heroics
+FEATDESCRIPTION: Activate this bard ability to grant an ally a +4 morale bonus to his or her saves, and a +4 dodge bonus to armor class. Requires 18 trained ranks (not total mod) of the Perform skill to use.;
+CLASSLIST: Bard;
+LEVEL: 15;
+ACQUIRE: Automatic;
+NEEDSALL: Skill Perform:18;
+ICON: InspireHeroicsIcon;
 
 FEATNAME: Insightful Reflexes;
 FEATDESCRIPTION: Picks the highest modifier between your intelligence and your dexterity modifier for your reflex saves.;
@@ -2500,6 +2519,7 @@ FEATDESCRIPTION: Activate this bard ability to create an effect equivalent to th
 CLASSLIST: Bard;
 LEVEL: 12;
 ACQUIRE: Automatic;
+NEEDSALL: Skill Perform:15;
 ICON: SongOfFreedom;
 
 PARENTHEADING: Spell Focus;
@@ -2616,6 +2636,7 @@ FEATDESCRIPTION: A bard can make a suggestion (as the spell) to a creature that 
 CLASSLIST: Bard;
 LEVEL: 6;
 ACQUIRE: Automatic;
+NEEDSALL: Skill Perform:9;
 ICON: SuggestionIcon;
 
 FEATNAME: Sunder;

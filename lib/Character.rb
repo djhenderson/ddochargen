@@ -20,6 +20,11 @@ module DDOChargen
       }
     end
 
+    # **TODO** This function is a stub
+    def has_feat ( f )
+      return false
+    end
+
     def to_s
       return "Character [Name = #{first_name} #{last_name}, Attributes = #{attributes}, Levels = [ #{levels}] ]"
     end

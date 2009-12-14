@@ -6,7 +6,7 @@ module DDOChargen
 
   class Database
 
-    attr_accessor :skills, :races, :backend
+    attr_accessor :skills, :races, :feats, :backend
 
     def initialize ( be = RonHilerBackend.new() ) 
       @backend = be
@@ -15,6 +15,7 @@ module DDOChargen
     def load
       @skills = backend.load_skills()
       @races = backend.load_races()
+      @feats = backend.load_feats()
     end
 
   end

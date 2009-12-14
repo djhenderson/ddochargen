@@ -2,12 +2,22 @@
 require "lib/Backend.rb"
 require "lib/Skill.rb"
 require "lib/Race.rb"
+require "lib/Feat.rb"
+
+require "lib/SkillDependency.rb"
+require "lib/FeatDependency.rb"
 
 module DDOChargen
 
   class RonHilerBackend < Backend
 
     def initialize
+    end
+
+    def split_line ( line )
+      if line =~ /([^:]+): ([^;]+)/
+        return Array.new([ $1, $2 ]);
+      end
     end
 
     def load_skills
@@ -69,6 +79,52 @@ module DDOChargen
       }
       races.push(race)
       return races
+    end
+
+    def parse_requirements ( deparray, value )
+      value.split(",").each { |req|
+        req = req.strip
+        if req =~ /(\w+)\s(.+)/
+          what = $1.downcase
+          text = $2
+          if what == "feat" 
+            # A feat dependency, text is the feat.
+            deparray.push FeatDependency.new(text)
+          elsif what == "skill"
+            # A skill dependency, very rare that is why
+            # RonHiler has it wrong. In RHs editor a bard A gets
+            # the song on the same level as a bard B who puts an increase
+            # in perform every level regardless if he (bard A) puts points
+            # into perform or not. This is a bug!
+            sdep = text.split(":")
+            deparray.push SkillDependency.new(sdep[0].strip, sdep[1].strip)
+          end
+        end
+      }
+    end
+
+    def load_feats
+      featsfile = @source + "/FeatsFile.txt"
+      feat = Feat.new
+
+      File.open(featsfile, "r").each { |line|
+        line = line.chomp.strip
+
+        if line.empty?
+        else
+          nvp = split_line(line)
+          key = nvp[0].downcase
+          value = nvp[1]
+
+          if key == "featname"
+            feat.name = value
+          elsif key == "featdescription"
+            feat.description = value
+          elsif key == "needsall"
+            
+          end
+        end
+      }
     end
     
   end

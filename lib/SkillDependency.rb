@@ -14,7 +14,7 @@ module DDOChargen
     end
 
     def meets ( level )
-      return level.skill_rank(skill) = @required_rank
+      return level.skill_rank(skill) >= @required_rank
     end
 
   end

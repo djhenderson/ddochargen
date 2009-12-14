@@ -4,7 +4,7 @@
 
 module DDOChargen
 
-  def Dependency
+  class Dependency
     def meets ( level )
     end
   end
