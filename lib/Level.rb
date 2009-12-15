@@ -33,6 +33,16 @@ module DDOChargen
       return rank
     end
 
+    def bab
+      # **TODO** This is a stub
+      return 0
+    end
+
+    def base_attribute
+      # **TODO** This is a stub
+      return 0
+    end
+
     def to_s
       return "Level [Level = #{level}]"
     end

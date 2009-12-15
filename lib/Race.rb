@@ -12,6 +12,7 @@ module DDOChargen
       @extra_skillpoint = false
       @extra_feat = false
       @base_attributes = Attributes.new()
+      @feats_gained = Array.new
     end
 
     def == ( race )

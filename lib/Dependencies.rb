@@ -31,6 +31,18 @@ module DDOChargen
       return true
     end
 
+    def describe
+      str = "Needs All = ["
+      @all_of.each { |x| 
+        str = str + x.describe + ","
+      }
+      str += "] Needs One = ["
+      @one_of.each { |x|
+        str = str + x.describe + ","
+      }
+      str += "]"
+    end
+
   end
 
 end

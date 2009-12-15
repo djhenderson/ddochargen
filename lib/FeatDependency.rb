@@ -15,6 +15,11 @@ module DDOChargen
       return level.character.has_feat(@feat)
     end
 
+    def describe
+      return "Feat #{feat}" unless feat == nil
+      return "Invalid feat dependency."
+    end
+
   end
 
 end

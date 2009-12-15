@@ -28,7 +28,8 @@ puts "Int = #{attr.intelligence} Buypoints = #{attr.buypoints}"
 puts "Wis = #{attr.wisdom} Buypoints = #{attr.buypoints}"
 puts "Cha = #{attr.charisma} Buypoints = #{attr.buypoints}"
 
-char.levels[1].skill_increases["balance"] = 1
-char.levels[0].skill_increases["balance"] = 1
-
-puts char.levels[0].skill_rank("balance")
+feat = db.find_first "Mithral Body", "feat"
+if not feat == nil
+  puts feat
+  puts feat.dependencies.describe
+end

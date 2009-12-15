@@ -17,6 +17,11 @@ module DDOChargen
       return level.skill_rank(skill) >= @required_rank
     end
 
+    def describe
+      return "Invalid SkillDependency" if @skill == nil
+      return "Skill #{skill} Rank #{required_rank}"
+    end
+
   end
 
 end

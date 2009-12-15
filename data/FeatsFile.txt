@@ -1357,7 +1357,7 @@ LEVEL: 9;
 ACQUIRE: Automatic;
 ICON: InspireGreatnessIcon;
 
-FEATNAME: Inspire Heroics
+FEATNAME: Inspire Heroics;
 FEATDESCRIPTION: Activate this bard ability to grant an ally a +4 morale bonus to his or her saves, and a +4 dodge bonus to armor class. Requires 18 trained ranks (not total mod) of the Perform skill to use.;
 CLASSLIST: Bard;
 LEVEL: 15;

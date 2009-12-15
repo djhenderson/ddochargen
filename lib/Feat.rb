@@ -17,6 +17,14 @@ module DDOChargen
       @multiple_times = false
     end
 
+    def ==(what)
+      return (what.to_s.downcase == @name.downcase)
+    end
+
+    def to_s
+      return @name
+    end
+
   end
 
 end
