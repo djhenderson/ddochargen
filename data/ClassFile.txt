@@ -1,0 +1,1217 @@
+CLASSNAME: Fighter;
+DESCRIPTION: The fighter is the ultimate fighting machine, able to wield all but those
+ most exotic of weapons and armor. Their prowess in combat is unmatched and their wide
+ selection of feats enables them to {\b {\cf1 train in many fighting styles}}: the classic "sword
+ and shield" style, the crushing assault of great axes or a style relying on finesse
+ and a pair of fine swords.\par\par
+Primary role in a party is the {\b {\cf1 front-line combatant}}, also well-suited to solo play\par
+{\b {\cf1 Gains combat feats faster than any other class}}\par
+Proficient with {\b {\cf1 all simple and martial weapons}}\par
+Can wear {\b {\cf1 all armor and shields}}, including tower shields\par
+Cannot inherently cast spells or use wands\par\par
+{\b {\cf5 Recommended Attributes: Strength, Constitution}}\par\par
+Wherever there is conflict, there are fighters: armed and armored men and women trained
+ in combat, to serve as mercenaries, soldiers, guardians or adventurers. Some are kind,
+ some are cruel, but all are brave and bold warriors. The fighter studies his opponents'
+ weaknesses, develops powerful maneuvers and holds back the encroaching hordes with skill
+ and courage.;
+HITDIE: 10;
+SKILLPOINTS: 2;
+BAB: 1;
+FORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+REFSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+WILLSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+BONUSFEATS: 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, FEATS, Select Feats;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, FEATS, Select Feats;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, FEATS, Select Feats;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, FEATS, Select Feats;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, FEATS, Select Feats;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, FEATS, Select Feats;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, FEATS, Select Feats;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, FEATS, Select Feats;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, FEATS, Select Feats;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Paladin;
+DESCRIPTION: The paladin is a virtuous combination of fighter and cleric. They possess
+ the fighter's combat ability and at higher levels, also gain the ability to cast
+ divine spells and turn undead as a cleric. Their unique abilities include {\b {\cf1 special
+ auras}} that protect allies and the power to {\b {\cf1 smite evil}} foes.\par\par
+Excellent in solo play, especially against evil and undead foes\par
+A good secondary front-line combatant (along with fighters and barbarians)\par
+Proficient with all simple and martial weapons\par
+Can wear all armor and shields, except tower shields\par
+Can {\b {\cf1 cast divine spells}} at level 4\par
+Can {\b {\cf1 turn undead}} at level 3\par
+{\b {\cf1 Immune to disease}} at level 2\par
+{\b {\cf1 Must be lawful good}}\par\par
+{\b {\cf5 Recommended Attributes: Charisma, Strength, Wisdom, Constitution}}\par\par
+The compassion to pursue good, the will to uphold law, and the power to defeat evil -
+ these are the three weapons of the paladin. Few possess the piety and devotion that
+ it takes to walk the paladin's path, but those few are rewarded with the power to
+ protect, to heal, and to smite evil. In a land of evil deeds, unholy cults, backstabbing
+ guilds and inscrutable dragons, the paladin is the last, best hope for the forces of Light.;
+HITDIE: 10;
+SKILLPOINTS: 2;
+BAB: 1;
+FORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+REFSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+WILLSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+ALIGNMENT: Lawful Good;
+SPELLPOINTS: 0, 0, 0, 5, 10, 25, 40, 55, 70, 85, 100, 115, 130, 145, 160, 175, 190, 205, 220, 235;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Barbarian;
+DESCRIPTION: The barbarian is a fearsome combatant, able to move quickly and take on
+ multiple foes at once. His ability to {\b {\cf1 rage gives him temporary bonuses to strength
+ and constitution}} and his wide selection of skills and abilities is rivaled only by
+ the ranger, rogue and bard classes.\par\par
+Excellent for solo play or as a front-line combatant when in a party\par
+{\b {\cf1 Higher base movement speed}} than any other class\par
+Proficient with all simple and martial weapons\par
+Can wear medium armor or lighter and shields, except tower shields\par
+Cannot inherently cast spells or use wands\par
+{\b {\cf1 Cannot be of lawful alignment}}\par\par
+{\b {\cf5 Recommended Attributes: Strength, Constitution}}\par\par
+From the Shadow Marches to the Eldeen Reaches come brave, even reckless warriors.
+ Civilized people call them barbarians or berserkers and suspect them of mayhem,
+ impiety, and atrocities. These barbarians, however, have proven their mettle and
+ their value to those who would be their allies. To enemies who underestimated them,
+ they have proved their cunning and resourcefulness.;
+HITDIE: 12;
+SKILLPOINTS: 4;
+BAB: 1;
+FORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12;
+REFSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+WILLSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+ALIGNMENT: Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Monk;
+DESCRIPTION: The monk persues personal perfection through action as well as contemplation. They excel at
+ {\b {\cf1 unarmed and unarmored combat}}, and channel a subtle energy called {\b {\cf1 ki}}, which allows
+ her to perform amazing feats.\par
+Has an {\b {\cf1 extremely active combat style}} and builds up {\b {\cf1 ki}} to power her abilties in combat.\par
+Proficient with {\b {\cf1 club, crossbows, dagger, handaxe, kama, quarterstaff, and shuriken}}, but prefers kama,
+ quarterstaff, shuriken, and unarmed combat to maximize the use of her special monk abilities.\par
+Can wear {\b {\cf1 no armor or sheilds}} without losing class abilities but gains Wisdom bonuses to Armor class
+ when unarmored.\par
+Cannot inherently cast spells or use wands.\par\par
+{\b {\cf5 Recommended Attributes: Strength, Dexterity, Constitution, Wisdom.}}\par\par
+The monk functions best as an opportunistic combatant, using her speed to get into and out of combat quickly rather
+ than engaging in prolonged melees. She makes an excellent scout, and through her choice of enhancements, can
+ help fill a variety of party rolls.;
+HITDIE: 8;
+SKILLPOINTS: 4;
+BAB: 0.75;
+BONUSFEATS: 1, 2, 3, 6;
+FORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+REFSAVE:  2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+WILLSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+ALIGNMENT: Lawful Good, Lawful Neutral;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, FEATS, Select Feats;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, FEATS, Select Feats;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, FEATS, Select Feats;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, FEATS, Select Feats;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, FEATS, Select Feats;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, FEATS, Select Feats;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, FEATS, Select Feats;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, FEATS, Select Feats;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, FEATS, Select Feats;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Rogue;
+DESCRIPTION: The rogue possesses the unique ability to {\b {\cf1 sense and disarm traps}}, making
+ her invaluable to any party of adventurers. Her light armor, extensive skill set and
+ dexterity enables her to dodge traps, tumble past opponents and jump over obstacles
+ with ease.\par\par
+Works best when traveling with competent warriors, too fragile for solo play\par
+The only class that can {\b {\cf1 disarm traps and pick locks}} without the use of spells\par
+Excellent at spotting and avoiding danger\par
+Typically wears light armor and wields light or ranged weapons\par
+Rogues possess the {\b {\cf1 greatest assortment of class skills and the most points with which to
+ purchase}} them\par
+Proficient with all simple and martial weapons\par
+Can wear light armor and shields, except tower shields\par
+Rogues have the ability to deal {\b {\cf1 extra damage when ambushing or flanking a foe}}\par
+The rogue's stealth and trap-finding ability make her an amazing scout\par
+No alignment restriction\par\par
+{\b {\cf5 Recommended Attributes: Dexterity, Intelligence, Charisma}}\par\par
+The only thing rogues have in common with one another is that they're all different.
+ Some are stealthy thieves. Others are silver-tongued tricksters. Still others are
+ scouts, infiltrators, spies, diplomats, or thugs. What they do share is versatility,
+ adaptability, and resourcefulness. In general, rogues are skilled at getting what
+ others don't want them to get: entrance into a locked treasure vault, safe passage
+ past a deadly trap, secret battle plans, or the trust of a guard.;
+HITDIE: 6;
+SKILLPOINTS: 8;
+BAB: 0.75;
+BONUSFEATS: 10, 13, 16, 19;
+FORTSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+REFSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+WILLSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, FEATS, Select Feats;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, FEATS, Select Feats;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, FEATS, Select Feats;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, FEATS, Select Feats;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, FEATS, Select Feats;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, FEATS, Select Feats;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, FEATS, Select Feats;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, FEATS, Select Feats;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, FEATS, Select Feats;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Ranger;
+DESCRIPTION: The ranger is a deadly marksman, a stealthy scout and an agile swordsman.
+ At higher levels, these abilities increase, giving them extra damage and attacks
+ with these weapons, as well as access to divine spells.\par\par
+A good combatant but better suited as a {\b {\cf1 ranged attacker}} in a party\par
+At 2nd level they can {\b {\cf1 dual-wield}} weapons and gain a strength bonus to bow attacks\par
+Relies on a {\b {\cf1 high dexterity}} and light armor for protection\par
+Proficient with all simple and martial weapons\par
+Can wear light armor and shields, except tower shields\par
+Has access to a wide array of stealth and perception-based skills\par
+Can cast {\b {\cf1 divine spells}} at level 4\par
+Specialized training gives them {\b {\cf1 bonuses against favored enemy}} races\par
+No alignment restriction\par\par
+{\b {\cf5 Recommended Attributes: Dexterity, Strength, Wisdom}}\par\par
+Although the wilds are home to fierce and cunning creatures, such as bloodthirsty
+ worgs and malicious spiders, none are more cunning and powerful than the ranger. A
+ skilled hunter and stalker, the ranger knows both the hidden hearts of the woodlands
+ and the darkest caves of the underworld. Skilled in woodcraft as well as combat, he
+ spends years studying the habits of his prey in order to defeat it.;
+HITDIE: 8;
+SKILLPOINTS: 6;
+BAB: 1;
+BONUSFEATS: 1, 5, 10, 15, 20;
+FORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+REFSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+WILLSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+SPELLPOINTS: 0, 0, 0, 5, 10, 25, 40, 55, 70, 85, 100, 115, 130, 145, 160, 175, 190, 205, 220, 235;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, FEATS, Select Feats;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, FEATS, Select Feats;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, FEATS, Select Feats;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, FEATS, Select Feats;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, FEATS, Select Feats;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, FEATS, Select Feats;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, FEATS, Select Feats;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, FEATS, Select Feats;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, FEATS, Select Feats;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Cleric;
+DESCRIPTION: Clerics are {\b {\cf1 masters of divine spell-casting and healing}}, able to bestow
+ buffs and cure maladies. The ultimate foe of the undead, the clerics can destroy
+ them or cause them to flee with but a gesture. Clerics make up for their limited
+ weapons training with their proficiency at casting spells while wearing heavy armor.\par\par
+Healing magic enables the cleric to adventure alone or with a well-armed group\par
+Can {\b {\cf1 summon creatures}} to fight for them\par
+At 9th level, can {\b {\cf1 resurrect}} slain allies\par
+Can {\b {\cf1 turn undead, heal allies, curse enemies and cast buffs}}\par
+Proficient with all simple weapons\par
+Can wear all armor and shields, except tower shields\par
+No alignment restriction\par\par
+{\b {\cf5 Recommended Attributes: Wisdom, Charisma}}\par\par
+The handiwork of the gods is everywhere: in places of natural beauty, in mighty
+ crusades, in soaring temples, and in the hearts and minds of their clerics. A cleric
+ channels her god's power perform miraculous deeds, including raising the dead,
+ healing the sick and blasting undead foes with powerful spells.;
+HITDIE: 8;
+SKILLPOINTS: 2;
+BAB: 0.75;
+FORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+REFSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+WILLSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+SPELLPOINTS: 50, 75, 100, 125, 150, 180, 215, 255, 300, 350, 405, 465, 530, 600, 675, 755, 840, 930, 1025, 1125;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Wizard;
+DESCRIPTION: The wizard is the versatile arcane spell-caster. Her high intelligence
+ score enables her to learn many spells (and potentially, every spell!) but unlike
+ the sorcerer, she must prepare spells in advance. A wizard can also serve as a
+ {\b {\cf1 healer for warforged}} allies.\par\par
+Lack of armor and combat training makes the sorcerer difficult for solo play\par
+Can {\b {\cf1 inscribe spells into their spell books from scrolls}}\par
+High intelligence score gives the wizard the ability to learn many skills\par
+Have a wider variety of spells, both offensive, defensive and utilitarian than the sorcerer\par
+Can learn meta-magic feats and enhancements that bolster her arcane spells\par
+Can {\b {\cf1 summon creatures}} to fight for them\par
+Proficient with some simple weapons\par
+{\b {\cf1 No armor proficiencies}}\par
+No alignment restriction\par\par
+{\b {\cf5 Recommended Attributes: Intelligence}}\par\par
+A few muttered words and fleeting gestures carry more power than a battleaxe when
+ they are the words and gestures of a wizard. These simple acts make magic seem easy,
+ but they only hint at the time the wizard must spend to learn her craft. Unlike
+ sorcerers, wizards depend on intensive study to create their magic. They research
+ musty old tomes, debate magical theory with their peers, and practice minor magics
+ whenever they can.;
+HITDIE: 4;
+SKILLPOINTS: 2;
+BAB: 0.5;
+BONUSFEATS: 1, 5, 10, 15, 20;
+FORTSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+REFSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+WILLSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+SPELLPOINTS: 50, 75, 100, 125, 150, 180, 215, 255, 300, 350, 405, 465, 530, 600, 675, 755, 840, 930, 1025, 1125;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, SPELLS, Select Spells;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, FEATS, Select Feats;
+ADVANCEMENT: 2, SPELLS, Select Spells;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, SPELLS, Select Spells;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, FEATS, Select Feats;
+ADVANCEMENT: 4, SPELLS, Select Spells;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, FEATS, Select Feats;
+ADVANCEMENT: 5, SPELLS, Select Spells;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, SPELLS, Select Spells;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, FEATS, Select Feats;
+ADVANCEMENT: 7, SPELLS, Select Spells;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, FEATS, Select Feats;
+ADVANCEMENT: 8, SPELLS, Select Spells;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, SPELLS, Select Spells;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, FEATS, Select Feats;
+ADVANCEMENT: 10, SPELLS, Select Spells;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, FEATS, Select Feats;
+ADVANCEMENT: 11, SPELLS, Select Spells;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, SPELLS, Select Spells;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, FEATS, Select Feats;
+ADVANCEMENT: 13, SPELLS, Select Spells;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, FEATS, Select Feats;
+ADVANCEMENT: 14, SPELLS, Select Spells;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, SPELLS, Select Spells;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, SPELLS, Select Spells;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, SPELLS, Select Spells;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, SPELLS, Select Spells;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, SPELLS, Select Spells;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, SPELLS, Select Spells;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Sorcerer;
+DESCRIPTION: The sorcerer is the most powerful of the ranged attackers. While capable
+ of casting spells quickly and possessing more spell points than wizards, the
+ sorcerer also prepares fewer spells than their arcane counterparts. A sorcerer can
+ also {\b {\cf1 repair warforged}} characters using magic.\par\par
+Lack of armor and combat training makes the sorcerer difficult for solo play\par
+Sorcerers have the {\b {\cf1 most powerful offensive spells}}\par
+Capable of readying {\b {\cf1 fewer spells than the Wizard}}, but able to cast them {\b {\cf1 more
+ frequently}}\par
+Innate magic enables them to cast spells without memorizing them in advance\par
+Can learn meta-magic feats and enhancements that bolster her arcane spells\par
+Can {\b {\cf1 summon creatures}} to fight for them\par
+Proficient with all simple weapons\par
+{\b {\cf1 No armor proficiencies}}\par
+High charisma score gives them an edge when dealing with NPCs using skills such as
+ diplomacy, bluff, haggle or intimidation\par
+No alignment restriction\par\par
+{\b {\cf5 Recommended Attributes: Charisma}}\par\par
+Sorcerers create magic the way a poet creates poems, with inborn talent honed by
+ practice. They have no books, no mentors, no theories - just raw power that they
+ direct at will. Some sorcerers claim that the blood of dragons course through their
+ veins. Sorcerers often have very good looks, usually with a touch of the exotic,
+ that hints at an unusual heritage.;
+HITDIE: 4;
+SKILLPOINTS: 2;
+BAB: 0.5;
+FORTSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+REFSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+WILLSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+SPELLPOINTS: 100, 150, 200, 250, 300, 355, 415, 480, 550, 625, 705, 790, 880, 975, 1075, 1180, 1290, 1400, 1520, 1645, 1775, 1910, 2050, 2195;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, SPELLS, Select Spells;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, SPELLS, Select Spells;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, SPELLS, Select Spells;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, SPELLS, Select Spells;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, SPELLS, Select Spells;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, SPELLS, Select Spells;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, SPELLS, Select Spells;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, SPELLS, Select Spells;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, SPELLS, Select Spells;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, SPELLS, Select Spells;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, SPELLS, Select Spells;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, SPELLS, Select Spells;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, SPELLS, Select Spells;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, SPELLS, Select Spells;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, SPELLS, Select Spells;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, SPELLS, Select Spells;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, SPELLS, Select Spells;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, SPELLS, Select Spells;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, SPELLS, Select Spells;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, SPELLS, Select Spells;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Bard;
+DESCRIPTION: The bard possesses a degree of {\b {\cf1 proficiency in all aspects of adventuring}},
+ be it combat, scouting, or spell-casting. With the ability to {\b {\cf1 heal, enhance and
+ inspire}} a party with spells and songs, the bard makes a powerful ally. The bard also
+ shares the rogue's ability to {\b {\cf1 use wands and scrolls}}.\par\par
+Excellent when serving a supporting role in the party, not as suited for solo play\par
+Uses the unique Perform skill to {\b {\cf1 buff allies with bardic songs}}\par
+Can also use {\b {\cf1 Perform to charm and fascinate}} enemies\par
+Proficient with all simple weapons and some martial weapons\par
+Can wear light armor and shields, except tower shields, though shields may interfere
+ with Bards' spellcasting\par
+{\b {\cf1 Cannot be of lawful alignment}}\par\par
+{\b {\cf5 Recommended Attributes: Charisma, Intelligence}}\par\par
+It is said that music is a kind of magic and the bard proves that saying true.
+ Wandering across the land, gathering lore, telling stories, working magic with her
+ music and living off the gratitude of her audience - such is the life of the bard.
+ When chance or opportunity draws them into conflict, bards serve as diplomats,
+ negotiators, messengers, scouts and spies.;
+HITDIE: 6;
+SKILLPOINTS: 6;
+BAB: 0.75;
+FORTSAVE: 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6;
+REFSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+WILLSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+ALIGNMENT: Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+SPELLPOINTS: 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, SPELLS, Select Spells;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, SPELLS, Select Spells;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, SPELLS, Select Spells;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, SPELLS, Select Spells;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, SPELLS, Select Spells;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, SPELLS, Select Spells;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, SPELLS, Select Spells;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, SPELLS, Select Spells;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, SPELLS, Select Spells;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, SPELLS, Select Spells;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, SPELLS, Select Spells;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, SPELLS, Select Spells;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, SPELLS, Select Spells;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, SPELLS, Select Spells;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, SPELLS, Select Spells;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, SPELLS, Select Spells;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, SPELLS, Select Spells;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, SPELLS, Select Spells;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, SPELLS, Select Spells;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, SPELLS, Select Spells;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;
+
+CLASSNAME: Favored Soul;
+DESCRIPTION: Wielding divine magic to both heal and destroy, Favored Souls have fewer spell points than clerics but can cast more often.\par\par
+{\b {\cf5 Solo Ability}}: Good.\par\par
+With thier innate connection to the divine, favored souls can cast {\b {\cf5 divine}} spells without needing time for study and prayer like clerics, 
+ but they can only perform a fixed number of spells in this way.\par\par
+Like clerics, favored souls have access to powerful healing spells. Favored souls and sorcerers get more {\b {\cf5 spell points}} than any of the other classes.
+ They also gain more bonus spell points from special magical items. As a result, they can cast more often.\par\par
+Favored souls cannot switch spells at taverns or rest shrines. They are able to switch spells but to do so they must undergo a speical ritual that can only be 
+ done once every few days.\par\par
+Charisma is the most important stat for favored souls. High charisma grants the favored soul access to higher level spells and gives him or her more
+ {\b {\cf5 spell points}}.\par\par
+Wisdom is also important for favored souls, especially those who want to use offensive spells, because wisdom determines how difficult a favored soul's spells are
+ for enemies to resist.\par\par
+Typical abilities: {\b {\cf5 Empower Spell}}, {\b {\cf5 Leap of Faith}}.;
+HITDIE: 8;
+SKILLPOINTS: 2;
+BAB: 0.75;
+ORTSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+REFSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+WILLSAVE: 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12;
+ALIGNMENT: Lawful Good, Lawful Neutral, Neutral Good, True Neutral, Chaotic Good, Chaotic Neutral;
+SPELLPOINTS: 100, 150, 200, 250, 300, 355, 415, 480, 550, 625, 705, 790, 880, 975, 1075, 1180, 1290, 1400, 1520, 1645, 1775, 1910, 2050, 2195;
+BONUSFEATS: 1, 3, 5, 10, 12, 15, 20;
+ADVANCEMENT: 1, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 1, FEATS, Select Feats;
+ADVANCEMENT: 1, SPELLS, Select Spells;
+ADVANCEMENT: 1, TOME, Tome Increases;
+ADVANCEMENT: 1, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 2, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 2, FEATS, Select Feats;
+ADVANCEMENT: 2, SPELLS, Select Spells;
+ADVANCEMENT: 2, TOME, Tome Increases;
+ADVANCEMENT: 2, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 3, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 3, FEATS, Select Feats;
+ADVANCEMENT: 3, SPELLS, Select Spells;
+ADVANCEMENT: 3, TOME, Tome Increases;
+ADVANCEMENT: 3, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 4, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 4, SPELLS, Select Spells;
+ADVANCEMENT: 4, FEATS, Select Feats;
+ADVANCEMENT: 4, TOME, Tome Increases;
+ADVANCEMENT: 4, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 5, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 5, FEATS, Select Feats;
+ADVANCEMENT: 5, SPELLS, Select Spells;
+ADVANCEMENT: 5, TOME, Tome Increases;
+ADVANCEMENT: 5, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 6, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 6, FEATS, Select Feats;
+ADVANCEMENT: 6, SPELLS, Select Spells;
+ADVANCEMENT: 6, TOME, Tome Increases;
+ADVANCEMENT: 6, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 7, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 7, FEATS, Select Feats;
+ADVANCEMENT: 7, SPELLS, Select Spells;
+ADVANCEMENT: 7, TOME, Tome Increases;
+ADVANCEMENT: 7, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 8, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 8, FEATS, Select Feats;
+ADVANCEMENT: 8, SPELLS, Select Spells;
+ADVANCEMENT: 8, TOME, Tome Increases;
+ADVANCEMENT: 8, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 9, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 9, FEATS, Select Feats;
+ADVANCEMENT: 9, SPELLS, Select Spells;
+ADVANCEMENT: 9, TOME, Tome Increases;
+ADVANCEMENT: 9, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 10, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 10, FEATS, Select Feats;
+ADVANCEMENT: 10, SPELLS, Select Spells;
+ADVANCEMENT: 10, TOME, Tome Increases;
+ADVANCEMENT: 10, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 11, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 11, FEATS, Select Feats;
+ADVANCEMENT: 11, SPELLS, Select Spells;
+ADVANCEMENT: 11, TOME, Tome Increases;
+ADVANCEMENT: 11, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 12, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 12, FEATS, Select Feats;
+ADVANCEMENT: 12, SPELLS, Select Spells;
+ADVANCEMENT: 12, TOME, Tome Increases;
+ADVANCEMENT: 12, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 13, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 13, FEATS, Select Feats;
+ADVANCEMENT: 13, SPELLS, Select Spells;
+ADVANCEMENT: 13, TOME, Tome Increases;
+ADVANCEMENT: 13, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 14, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 14, FEATS, Select Feats;
+ADVANCEMENT: 14, SPELLS, Select Spells;
+ADVANCEMENT: 14, TOME, Tome Increases;
+ADVANCEMENT: 14, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 15, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 15, FEATS, Select Feats;
+ADVANCEMENT: 15, SPELLS, Select Spells;
+ADVANCEMENT: 15, TOME, Tome Increases;
+ADVANCEMENT: 15, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 16, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 16, FEATS, Select Feats;
+ADVANCEMENT: 16, SPELLS, Select Spells;
+ADVANCEMENT: 16, TOME, Tome Increases;
+ADVANCEMENT: 16, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 17, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 17, FEATS, Select Feats;
+ADVANCEMENT: 17, SPELLS, Select Spells;
+ADVANCEMENT: 17, TOME, Tome Increases;
+ADVANCEMENT: 17, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 18, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 18, FEATS, Select Feats;
+ADVANCEMENT: 18, SPELLS, Select Spells;
+ADVANCEMENT: 18, TOME, Tome Increases;
+ADVANCEMENT: 18, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 19, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 19, FEATS, Select Feats;
+ADVANCEMENT: 19, SPELLS, Select Spells;
+ADVANCEMENT: 19, TOME, Tome Increases;
+ADVANCEMENT: 19, ENHANCEMENTS, Select Enhancements;
+ADVANCEMENT: 20, SKILLS, Spend Skill Points (%i points to spend), 0;
+ADVANCEMENT: 20, FEATS, Select Feats;
+ADVANCEMENT: 20, SPELLS, Select Spells;
+ADVANCEMENT: 20, TOME, Tome Increases;
+ADVANCEMENT: 20, ENHANCEMENTS, Select Enhancements;

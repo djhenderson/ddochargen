@@ -6,7 +6,7 @@ module DDOChargen
 
   class Database
 
-    attr_accessor :skills, :races, :feats, :backend
+    attr_accessor :skills, :races, :feats, :classes, :backend
 
     def initialize ( be = RonHilerBackend.new() ) 
       @backend = be
@@ -20,6 +20,7 @@ module DDOChargen
       @skills = backend.load_skills
       @feats = backend.load_feats
       @races = backend.load_races
+      @classes = backend.load_classes
     end
 
     def find_in ( what, where )
@@ -35,6 +36,8 @@ module DDOChargen
       return obj if not obj == nil and (where == nil or where.downcase == "feat")
       obj = find_in(what, @races)
       return obj if not obj == nil and (where == nil or where.downcase == "race")
+      obj = find_in(what, @classes)
+      return obj if not obj == nil and (where == nil or where.downcase == "class")
       return nil
     end
 

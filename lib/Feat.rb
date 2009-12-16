@@ -5,7 +5,7 @@ module DDOChargen
 
   class Feat
 
-    attr_accessor :name, :description, :dependencies, :train_able, :bonus_feat_for, :multiple_times
+    attr_accessor :name, :description, :dependencies, :train_able, :bonus_feat_for, :multiple_times, :exclusive_bonus
 
     def initialize 
       # Create dependencies.
@@ -15,6 +15,7 @@ module DDOChargen
       @bonus_feat_for = Hash.new(false)
       # Barely any feat can be taken multiple times.
       @multiple_times = false
+      @exclusive_bonus = false
     end
 
     def ==(what)

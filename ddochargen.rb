@@ -33,3 +33,6 @@ if not feat == nil
   puts feat
   puts feat.dependencies.describe
 end
+
+race  = db.find_first "Paladin"
+puts race.inspect

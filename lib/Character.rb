@@ -1,16 +1,19 @@
 
 require "lib/CharacterAttributes.rb"
+require "lib/Alignment.rb"
 require "lib/Level.rb"
 
 module DDOChargen
 
   class Character 
 
-    attr_accessor :attributes, :first_name, :last_name, :race, :levels, :database
+    attr_accessor :attributes, :first_name, :last_name, :race, :levels, :database, :alignment
 
     def initialize ( database )
       @database = database
 
+      # LG is the default alignment
+      @alignment = Alignment::LAWFUL_GOOD
       @attributes = CharacterAttributes.new()
       
       # Add the levels.
