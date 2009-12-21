@@ -6,7 +6,7 @@ require "lib/Character.rb"
 module DDOChargen
 
   class Level
-    attr_reader :character, :level, :skill_increases
+    attr_reader :character, :level, :skill_increases, :feats_gained
 
     def initialize ( character, lvl )
       @character = character
@@ -14,6 +14,8 @@ module DDOChargen
       # Per default a skill increase is zero, as in: we didn't
       # put any skillpoints in it.
       @skill_increases = Hash.new(0)
+      # Array containing the the feats gained (per race or class) on this level
+      @feats_gained = Array.new
     end
 
     def can_increase_ability?

@@ -66,8 +66,9 @@ module DDOChargen
           race = Race.new($1)
         elsif line =~ /BASESTATS: ([^;]+)/
           stats = $1.split(",")
-          race.base_attributes = Attributes.new(stats[0].strip, stats[1].strip, stats[2].strip,
-                                                stats[3].strip, stats[4].strip, stats[5].strip)
+          race.base_attributes = Attributes.new(Integer(stats[0].strip), Integer(stats[1].strip), 
+                                                Integer(stats[2].strip), Integer(stats[3].strip), 
+                                                Integer(stats[4].strip), Integer(stats[5].strip))
         elsif line =~ /FEATURES: ([^;]+)/
           $1.split(",").each() { |feature| 
             feature = feature.chomp().downcase().strip()

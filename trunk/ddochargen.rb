@@ -1,6 +1,9 @@
 
 require "lib/Character.rb"
 require "lib/Database.rb"
+require "ui/MainWindow.rb"
+
+require 'gtk2'
 
 # Load data.
 db = DDOChargen::Database.new()
@@ -11,28 +14,9 @@ db.load()
 # the character a god object. But who cares? Seriously, the character is
 # *the* central object of a character generator!
 char = DDOChargen::Character.new(db)
-char.first_name = "Lelah"
-char.last_name = ""
-attr = char.attributes
 
-attr.maxbuypoints = 32
+# Create a Main Window
+@mw = UI::MainWindow.new(char)
+Gtk.main
 
-8.times { attr.increase("str") }
-puts "Str = #{attr.strength} Buypoints = #{attr.buypoints}"
-8.times { attr.increase("dex") }
-puts "Dex = #{attr.dexterity} Buypoints = #{attr.buypoints}"
-4.times { attr.increase("con") }
-puts "Con = #{attr.constitution} Buypoints = #{attr.buypoints}"
-puts "Int = #{attr.intelligence} Buypoints = #{attr.buypoints}"
-8.times { attr.increase("wis") }
-puts "Wis = #{attr.wisdom} Buypoints = #{attr.buypoints}"
-puts "Cha = #{attr.charisma} Buypoints = #{attr.buypoints}"
 
-feat = db.find_first "Mithral Body", "feat"
-if not feat == nil
-  puts feat
-  puts feat.dependencies.describe
-end
-
-race  = db.find_first "Paladin"
-puts race.inspect
