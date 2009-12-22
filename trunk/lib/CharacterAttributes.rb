@@ -54,6 +54,10 @@ module DDOChargen
       if mod <= 0 then
         mod = 1
       end
+      emod = @base.by_name(what) - 8
+      if emod > 0 and mod > 1
+        mod = mod - (emod / 2)
+      end
       return ((@buypoints + mod) <= @maxbuypoints)
     end
     
