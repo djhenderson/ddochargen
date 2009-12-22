@@ -38,6 +38,7 @@ module UI
       table.attach(@race, 1, 2, 2, 3)
       
       @buildpoints = Gtk::ComboBox.new(true)
+      @buildpoints.signal_connect("changed") { on_buildpoints_changed }
       @buildpoints.show
       table.attach(@buildpoints, 1, 2, 3, 4)
       
@@ -97,6 +98,27 @@ module UI
     end
     
     def on_alignment_changed
+      align = DDOChargen::Alignment.new
+      newa = align.from_str(@alignment.active_text)
+      @character.alignment = newa
+    end
+    
+    def on_buildpoints_changed
+      bp = @buildpoints.active_text.to_i
+      @character.attributes.maxbuypoints = bp
+      if @character.attributes.buypoints > bp
+        # **TODO** Find a better solution here.
+        dlg = Gtk::MessageDialog.new(@mw, Gtk::Dialog::DESTROY_WITH_PARENT,
+                                          Gtk::MessageDialog::INFO,
+                                          Gtk::MessageDialog::BUTTONS_CLOSE,
+                                     "You have spent too many buildpoints. Your increases will be reset.")
+                                     
+        dlg.run
+        dlg.destroy
+        
+        @character.attributes.clear
+      end
+      update_stats
     end
     
     def update_stat(what)
@@ -105,7 +127,8 @@ module UI
       if mod >= 0 then
         mod = "+" + mod.to_s
       end
-      @ui.get_object(what+"mod").text = mod.to_s     
+      @ui.get_object(what+"mod").text = mod.to_s
+      @ui.get_object("remaining").text = @character.attributes.remaining_buypoints.to_s 
     end
     
     def update_stats

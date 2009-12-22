@@ -2,6 +2,8 @@
 # All possible alignments.
 #
 
+# **TODO** Rework and refactor this class significantly!
+
 module DDOChargen
 
   class Alignment

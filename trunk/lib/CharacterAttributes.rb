@@ -6,8 +6,8 @@ module DDOChargen
 
   class CharacterAttributes
 
-    attr_accessor :base, :maxbuypoints
-    attr_reader :increases, :buypoints
+    attr_accessor :maxbuypoints
+    attr_reader :increases, :buypoints, :base
 
     def initialize
       @base = Attributes.new()
@@ -21,17 +21,27 @@ module DDOChargen
       @increases.names.each { |item|
         base = @base.by_name(item)
         value = @increases.by_name(item)
-        if value > 0
-          value.times { |point| 
-            mod = ((base + point + 1) - 10) / 2
-            # If its less than zero (i.e. -2) then the cost is 1.
-            if mod < 0
-              mod = 1
-            end
-            @buypoints += mod
-          }
-        end
+        value.times { |point| 
+          mod = ((base + point) - 10) / 2
+          # If its less than or equal to zero (i.e. -2) then the cost is 1.
+          if mod <= 0
+            mod = 1
+          end
+          # If the race has a better base stat of +2, +2 costs only start when would have
+          # +3 costs, and +3 costs would start when we would have +4 costs etc.
+          # So substract the mod of the base improvement off the actually points spent.
+          ep = base - 8
+          if ep > 0 and mod > 1
+            mod = mod - (ep / 2)
+          end
+          @buypoints += mod
+        }
       }
+    end
+    
+    def base=(b)
+      @base = b
+      calculate_buypoints()
     end
 
     def can_increase? ( what ) 
@@ -39,8 +49,12 @@ module DDOChargen
       if wouldbe > @base.by_name(what)+10
         return false
       end
-      calculate_buypoints()
-      return (@buypoints < @maxbuypoints)
+      # Calculate what it would cost to increase this one further.
+      mod = get_mod(what)
+      if mod <= 0 then
+        mod = 1
+      end
+      return ((@buypoints + mod) <= @maxbuypoints)
     end
     
     def can_decrease? ( what )
@@ -94,6 +108,15 @@ module DDOChargen
     def get_mod ( what )
       ab = get(what)
       return (ab - 10) / 2
+    end
+    
+    def clear
+      @increases = Attributes.new(0, 0, 0, 0, 0, 0)
+      calculate_buypoints()
+    end
+    
+    def remaining_buypoints
+      return (@maxbuypoints - @buypoints)
     end
     
   end
