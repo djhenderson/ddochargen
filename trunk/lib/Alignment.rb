@@ -29,6 +29,11 @@ module DDOChargen
       return NEUTRAL if a == "neutral"
       return nil
     end
+    
+    def to_a
+      return [LAWFUL_GOOD, LAWFUL_NEUTRAL, CHAOTIC_GOOD, CHAOTIC_NEUTRAL, NEUTRAL]
+    end
+    
   end
 
 end

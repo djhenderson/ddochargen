@@ -35,12 +35,16 @@ module DDOChargen
     end
 
     def can_increase? ( what ) 
-      wouldbe = @base.by_name(what) + @increases.by_name(what)
+      wouldbe = @base.by_name(what) + @increases.by_name(what) + 1
       if wouldbe > @base.by_name(what)+10
         return false
       end
       calculate_buypoints()
       return (@buypoints < @maxbuypoints)
+    end
+    
+    def can_decrease? ( what )
+      return (@increases.by_name(what) > 0)
     end
 
     def increase ( what )
@@ -52,7 +56,7 @@ module DDOChargen
     end
 
     def decrease ( what ) 
-      if not can_increase?(what) then
+      if not can_decrease?(what) then
         raise ChargenError.new("Cannot decrease this stat any further!")
       end
       @increases.decrease(what)
@@ -81,6 +85,15 @@ module DDOChargen
 
     def charisma
       return @base.charisma + @increases.charisma
+    end
+    
+    def get ( what )
+      return @base.by_name(what) + @increases.by_name(what)
+    end
+    
+    def get_mod ( what )
+      ab = get(what)
+      return (ab - 10) / 2
     end
     
   end
