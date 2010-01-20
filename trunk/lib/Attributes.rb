@@ -19,6 +19,7 @@ module DDOChargen
     end
 
     def by_name ( name )
+      name = name.downcase
       if name == "strength" or name == "str"
         return @strength
       elsif name == "dexterity" or name == "dex"
@@ -40,6 +41,7 @@ module DDOChargen
       if value < 0 
         raise ArgumentError.new("Attribute must not be less than zero.")
       end
+      name = name.downcase
       if name == "strength" or name == "str"
         @strength = value
       elsif name == "dexterity" or name == "dex"

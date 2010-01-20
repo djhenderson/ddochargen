@@ -9,6 +9,10 @@ module UI
   class MainWindow
   
     attr_reader :ui, :mw, :race, :gender, :buildpoints, :alignment
+
+    def run
+      Gtk.main
+    end
   
     def initialize ( character )
       @character = character

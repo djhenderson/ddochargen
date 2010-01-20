@@ -23,6 +23,10 @@ module DDOChargen
       return @name
     end
 
+    def allows_32pt?
+      return @allows_32pt
+    end
+
   end
 
 end
