@@ -18,6 +18,10 @@ module QtUI
       # Construct our ability table.
       construct_ability_table
       update_ability_table
+      
+      # Level table
+      construct_level_table
+      update_level_table
 
       # Fill certain combo boxes.
       @ui.race.connect(SIGNAL("currentIndexChanged(QString)")) { |x| on_race_changed(x) } 
@@ -49,6 +53,79 @@ module QtUI
 
     def run
       # @a.exec
+    end
+    
+    def construct_level_table
+      level = @ui.level
+      
+      level.showGrid = false
+      14.times { |x|
+        level.horizontalHeader.resizeSection(x, 45)
+      }
+      # Class can be wider than the rest.
+      level.horizontalHeader.resizeSection(1, 100)
+      # As can be feats and feats granted.
+      level.horizontalHeader.resizeSection(12, 100)
+      level.horizontalHeader.resizeSection(13, 100)
+      
+      # Hide header
+      level.verticalHeader.defaultSectionSize = 24
+      level.verticalHeader.hide
+      
+      headers = [ "#", "Class", "STR", "DEX", "CON", "INT", "WIS", "CHA", "BAB", "Fort", "Reflex", "Will", "Feats", "Feats Gained" ]
+      
+      headers.each_index { |x|
+        # Set Header
+        itm = Qt::TableWidgetItem.new
+        itm.text = headers[x]
+        itm.textAlignment = Qt::AlignCenter
+        level.setHorizontalHeaderItem(x, itm)
+      }
+      
+      20.times { |x|      
+        btn = Qt::PushButton.new
+        btn.accessibleName = "level" + (x+1).to_s
+        btn.text = (x+1).to_s
+        btn.connect(SIGNAL(:clicked)) { on_level_button((x+1)) }
+        level.setCellWidget(x, 0, btn)
+      }
+    end
+    
+    def update_level_table
+      update_level_table_abilities
+    end
+    
+    # Small function to update only a portion of the level table.
+    def update_level_table_abilities
+      level = @ui.level
+      attr = [ "str", "dex", "con", "int", "wis", "cha" ]
+      
+      20.times { |l|
+        lvl = l + 1
+        
+        attr_idx = 2 # Starting position for the attribute columns
+        attr.each { |a|
+          item = level.item(l, attr_idx)
+          if item.nil?
+            # Optimisation: Don't construct a new one, if one's already there.
+            item = Qt::TableWidgetItem.new
+            item.textAlignment = Qt::AlignCenter
+          end
+          if @character.levels[l].can_increase_ability? and a == "str"
+            fnt = item.font
+            fnt.bold = true
+            item.font = fnt
+            # **TODO** Do level increase magic here.
+          end
+          item.text = @character.attributes.get(a).to_s
+          level.setItem(l, attr_idx, item)
+          attr_idx = attr_idx + 1
+        }
+      }
+    end
+    
+    def on_level_button (level)
+      puts "Level button pressed: " + level.to_s + "\n"
     end
 
     def construct_ability_table
@@ -109,7 +186,13 @@ module QtUI
           item.textAlignment = Qt::AlignCenter
           @ui.abilities.setItem(i, 4, item)
         end
-        item.text = @character.attributes.get_mod(ab[i]).to_s
+        mod = @character.attributes.get_mod(ab[i])
+        if mod > 0
+          mod = "+" + mod.to_s
+        else
+          mod = mod.to_s
+        end
+        item.text = mod
       }
       # Update how many buildpoints we got left.
       @ui.gb.title = "Abilities - " + @character.attributes.remaining_buypoints.to_s + " left."
@@ -119,6 +202,7 @@ module QtUI
       if @character.attributes.can_increase?(what)
         @character.attributes.increase(what)
         update_ability_table
+        update_level_table_abilities
       end
     end
 
@@ -126,6 +210,7 @@ module QtUI
       if @character.attributes.can_decrease?(what)
         @character.attributes.decrease(what)
         update_ability_table
+        update_level_table_abilities
       end
     end
 
@@ -156,5 +241,4 @@ module QtUI
     end
 
   end
-
 end
