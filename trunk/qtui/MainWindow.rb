@@ -1,6 +1,5 @@
 
 require 'Qt4'
-require 'qtuitools'
 
 require "qtui/MainWindow.ui.rb"
 
@@ -55,9 +54,12 @@ module QtUI
     def construct_ability_table
       @ui.abilities.showGrid = false
       @ui.abilities.horizontalHeader.hide
-      @ui.abilities.horizontalHeader.defaultSectionSize = 40
+      #@ui.abilities.horizontalHeader.defaultSectionSize = 40
       @ui.abilities.horizontalHeader.resizeSection(0, 90)
-
+      4.times { |x| 
+        @ui.abilities.horizontalHeader.resizeSection(x+1, 40)
+      }
+      
       @ui.abilities.verticalHeader.defaultSectionSize = 24
       @ui.abilities.verticalHeader.hide
 

@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
+<ui version="4.0" >
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
    <rect>
     <x>0</x>
     <y>0</y>
@@ -10,160 +9,126 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="windowTitle">
+  <property name="windowTitle" >
    <string>DDO Chargen</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QGroupBox" name="groupBox" >
+    <property name="geometry" >
      <rect>
       <x>90</x>
       <y>10</y>
-      <width>252</width>
-      <height>194</height>
+      <width>261</width>
+      <height>201</height>
      </rect>
     </property>
-    <property name="title">
+    <property name="title" >
      <string>Basics</string>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
+    <layout class="QGridLayout" >
+     <item row="0" column="0" >
+      <widget class="QLabel" name="label" >
+       <property name="text" >
         <string>Name:</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="name"/>
+     <item row="0" column="1" >
+      <widget class="QLineEdit" name="name" />
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
+     <item row="1" column="0" >
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
         <string>Race:</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QComboBox" name="race"/>
+     <item row="1" column="1" >
+      <widget class="QComboBox" name="race" />
      </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
+     <item row="2" column="0" >
+      <widget class="QLabel" name="label_3" >
+       <property name="text" >
         <string>Gender:</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QComboBox" name="gender"/>
+     <item row="2" column="1" >
+      <widget class="QComboBox" name="gender" />
      </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
+     <item row="3" column="0" >
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
         <string>Alignment:</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QComboBox" name="alignment"/>
+     <item row="3" column="1" >
+      <widget class="QComboBox" name="alignment" />
      </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_5">
-       <property name="text">
+     <item row="4" column="0" >
+      <widget class="QLabel" name="label_5" >
+       <property name="text" >
         <string>Buildpoints:</string>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
-      <widget class="QComboBox" name="buildpoints"/>
+     <item row="4" column="1" >
+      <widget class="QComboBox" name="buildpoints" />
      </item>
     </layout>
    </widget>
-   <widget class="QGroupBox" name="gb">
-    <property name="geometry">
+   <widget class="QGroupBox" name="gb" >
+    <property name="geometry" >
      <rect>
       <x>380</x>
       <y>10</y>
-      <width>271</width>
+      <width>281</width>
       <height>201</height>
      </rect>
     </property>
-    <property name="title">
+    <property name="title" >
      <string>Abilities</string>
     </property>
-    <widget class="QTableWidget" name="abilities">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>261</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="cornerButtonEnabled">
-      <bool>false</bool>
-     </property>
-     <property name="rowCount">
-      <number>6</number>
-     </property>
-     <property name="columnCount">
-      <number>5</number>
-     </property>
-     <attribute name="horizontalHeaderVisible">
-      <bool>true</bool>
-     </attribute>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>50</number>
-     </attribute>
-     <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderDefaultSectionSize">
-      <number>18</number>
-     </attribute>
-     <attribute name="verticalHeaderMinimumSectionSize">
-      <number>10</number>
-     </attribute>
-     <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderDefaultSectionSize">
-      <number>18</number>
-     </attribute>
-     <attribute name="horizontalHeaderVisible">
-      <bool>true</bool>
-     </attribute>
-     <attribute name="verticalHeaderMinimumSectionSize">
-      <number>10</number>
-     </attribute>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>50</number>
-     </attribute>
-     <row/>
-     <row/>
-     <row/>
-     <row/>
-     <row/>
-     <row/>
-     <column/>
-     <column/>
-     <column/>
-     <column/>
-     <column/>
-    </widget>
+    <layout class="QGridLayout" >
+     <item row="0" column="0" >
+      <widget class="QTableWidget" name="abilities" >
+       <property name="cornerButtonEnabled" >
+        <bool>false</bool>
+       </property>
+       <property name="rowCount" >
+        <number>6</number>
+       </property>
+       <property name="columnCount" >
+        <number>5</number>
+       </property>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
     <rect>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar" />
  </widget>
  <resources/>
  <connections/>
