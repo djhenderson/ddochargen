@@ -1,12 +1,13 @@
 
 # This class represents one given level of the character.
 
+require "lib/Attribute.rb"
 require "lib/Character.rb"
 
 module DDOChargen
 
   class Level
-    attr_reader :character, :level, :skill_increases, :feats_gained
+    attr_reader :character, :level, :skill_increases, :feats_gained, :increase_in
 
     def initialize ( character, lvl )
       @character = character
@@ -16,10 +17,21 @@ module DDOChargen
       @skill_increases = Hash.new(0)
       # Array containing the the feats gained (per race or class) on this level
       @feats_gained = Array.new
+      # Defaults go into strength
+      @increase_in = Attribute.new("str")
     end
 
-    def can_increase_ability?
+    def can_increase_attribute?
       return level.modulo(4) == 0
+    end
+
+    # For backwards compability
+    alias :can_increase_ability? :can_increase_attribute?
+
+    def increase_attribute(ability)
+      if can_increase_ability?
+        @increase_in = Attribute.new(ability)
+      end
     end
 
     def can_select_feat?
@@ -35,12 +47,22 @@ module DDOChargen
       return rank
     end
 
-    def bab
-      # **TODO** This is a stub
-      return 0
+    def attribute (ability)
+      a = Attribute.new(ability)
+      # Get base
+      base = @character.attributes.get(ability.to_s)
+      # Add level increases and tomes on top of that!
+      @level.times { |x|
+        l = @character.levels[x]
+        # **TODO** Get tome increases here too.
+        if l.can_increase_ability? and a == l.increase_in.to_s
+          base = base + 1
+        end
+      }
+      return base
     end
 
-    def base_attribute
+    def bab
       # **TODO** This is a stub
       return 0
     end

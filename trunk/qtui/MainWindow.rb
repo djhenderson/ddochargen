@@ -5,6 +5,10 @@ require "qtui/MainWindow.ui.rb"
 
 module QtUI
 
+  class ItemAction
+    ABILITY = 1
+  end
+
   class MainWindow
 
     def initialize(c, a)
@@ -57,6 +61,9 @@ module QtUI
     
     def construct_level_table
       level = @ui.level
+
+      level.connect(SIGNAL("itemClicked(QTableWidgetItem*)")) { |x| on_level_table_clicked(x) }
+      level.horizontalHeader.connect(SIGNAL("sectionClicked(int)")) { |x| on_level_table_column_clicked(x) }
       
       level.showGrid = false
       14.times { |x|
@@ -105,19 +112,26 @@ module QtUI
         
         attr_idx = 2 # Starting position for the attribute columns
         attr.each { |a|
-          item = level.item(l, attr_idx)
+          item = level.takeItem(l, attr_idx)
           if item.nil?
             # Optimisation: Don't construct a new one, if one's already there.
             item = Qt::TableWidgetItem.new
             item.textAlignment = Qt::AlignCenter
+            item.flags = Qt::ItemIsEnabled
           end
-          if @character.levels[l].can_increase_ability? and a == "str"
+          if @character.levels[l].can_increase_ability?
+            # Tag this item so that it's clear it's an ability increase thingee.
+            item.setData(Qt::UserRole + 0, Qt::Variant.new(QtUI::ItemAction::ABILITY))
+            item.setData(Qt::UserRole + 1, Qt::Variant.new(l)); # Column
+            item.setData(Qt::UserRole + 2, Qt::Variant.new(attr_idx)) # Set level
+            item.setData(Qt::UserRole + 3, Qt::Variant.new(a)) # Set ability
+            # Mark all non-bold except those we have an increase in.
+            # **TODO** Find something better than making the text bold.
             fnt = item.font
-            fnt.bold = true
+            fnt.bold = (@character.levels[l].increase_in == a)
             item.font = fnt
-            # **TODO** Do level increase magic here.
           end
-          item.text = @character.attributes.get(a).to_s
+          item.text = @character.levels[l].attribute(a).to_s
           level.setItem(l, attr_idx, item)
           attr_idx = attr_idx + 1
         }
@@ -126,6 +140,38 @@ module QtUI
     
     def on_level_button (level)
       puts "Level button pressed: " + level.to_s + "\n"
+    end
+
+    def on_level_table_column_clicked(idx)
+      attr = [ "str", "dex", "con", "int", "wis", "cha" ]
+      if idx >= 2 and idx <= 7
+        idx = idx - 2 # make and index out of it.
+        @character.levels.each { |l|
+          if l.can_increase_attribute?
+            l.increase_attribute(attr[idx])
+          end
+        }
+        update_level_table_abilities()
+      end
+    end
+
+    def on_level_table_clicked (item)
+      action = item.data(Qt::UserRole + 0).toInt
+
+      puts "Item clicked: " + item.to_s + ". Action: " + action.to_s
+
+      if action == ItemAction::ABILITY
+        on_level_increase_clicked(item)
+      end      
+    end
+
+    def on_level_increase_clicked(item)
+      lvl = item.data(Qt::UserRole + 1).toInt
+      col = item.data(Qt::UserRole + 2).toInt
+      ab = item.data(Qt::UserRole + 3).toString
+
+      @character.levels[lvl].increase_attribute(ab)
+      update_level_table_abilities()
     end
 
     def construct_ability_table
