@@ -301,10 +301,11 @@ module DDOChargen
           elsif key == "willsave"
             cc.saves["will"] = value.split(",")
           elsif key == "alignment"
+            aligns = Array.new
             value.split(",").each { |a|
-              align = Alignment.new.from_str(a)
-              cc.dependencies.all_of.push AlignmentDependency.new(align)
+              aligns << a.downcase.strip
             }
+            cc.dependencies.all_of.push AlignmentDependency.new(aligns)
           end
           
         end

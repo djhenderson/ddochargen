@@ -5,14 +5,18 @@ require "lib/Dependency.rb"
 module DDOChargen
   
   class AlignmentDependency < Dependency
-    attr_accessor :alignment
+    attr_accessor :alignments
     
-    def initialize ( align = Alignment::LAWFUL_GOOD )
-      @alignment = align
+    def initialize ( align )
+      @alignments = Array.new
+      align.each { |x|
+        a = Alignment.new.from_str(x)
+        @alignments << a
+      }
     end
 
     def meets ( level )
-      return (level.character.alignment == @alignment)
+      return (@alignments.include?(level.character.alignment));
     end
 
     def describe

@@ -24,11 +24,12 @@ module DDOChargen
 
     def from_str ( align )
       a = align.downcase
+      a = a.strip
       return LAWFUL_GOOD if a == "lawful good"
       return LAWFUL_NEUTRAL if a == "lawful neutral"
       return CHAOTIC_GOOD if a == "chaotic good"
       return CHAOTIC_NEUTRAL if a == "chaotic neutral"
-      return NEUTRAL if a == "neutral"
+      return NEUTRAL if a == "neutral" or a == "true neutral"
       return nil
     end
     

@@ -7,7 +7,7 @@ require "lib/Character.rb"
 module DDOChargen
 
   class Level
-    attr_reader :character, :level, :skill_increases, :feats_gained, :increase_in
+    attr_reader :character, :level, :skill_increases, :feats_gained, :increase_in, :character_class
 
     def initialize ( character, lvl )
       @character = character
@@ -23,6 +23,13 @@ module DDOChargen
 
     def can_increase_attribute?
       return level.modulo(4) == 0
+    end
+
+    def character_class=(c)
+      cc = @character.database.find_first c.to_s, "Class"
+      if not cc.nil?
+        @character_class = cc
+      end
     end
 
     # For backwards compability
@@ -63,8 +70,14 @@ module DDOChargen
     end
 
     def bab
-      # **TODO** This is a stub
-      return 0
+      bab = 0
+      @level.times { |x|
+        lc = @character.levels[x].character_class
+        if not lc.nil?
+          bab += lc.bab
+        end
+      }
+      return bab
     end
 
     def to_s

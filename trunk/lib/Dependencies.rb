@@ -14,20 +14,25 @@ module DDOChargen
 
     def meets ( level )
       found_one = false
-      @one_off.each { |dep| 
-        if dep.meets(level)
-          found_one = true
-        end
-      }
-      # Optimisation: Return false if one_off failed
-      # to verify for this level.
-      return false unless found_one
+      if not @one_off.nil? and @one_off.count > 0
+        @one_off.each { |dep| 
+          if dep.meets(level)
+            found_one = true
+          end
+        }
+      else
+        # Nothing there to check for.
+        found_one = true
+      end
+      return false if not found_one
       # Now test the all of.
-      @all_of.each { |dep|
-        if not dep.meets(level)
-          return false
-        end
-      }
+      if not all_of.nil?
+        @all_of.each { |dep|
+          if not dep.meets(level)
+            return false
+          end
+        }
+      end
       return true
     end
 

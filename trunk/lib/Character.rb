@@ -54,6 +54,35 @@ module DDOChargen
       @race = r
     end
 
+    def class_level(c, level = 20)
+      classlevel = 0
+      level.times { |x|
+        if @levels[x].character_class == c then
+          classlevel = classlevel + 1
+        end
+      }
+      return classlevel
+    end
+
+    def can_level_in_class(c, level = 20)
+      # Check alignment restrictions.
+      if not c.dependencies.meets(@levels[0])
+        return false
+      end
+      # Create an array of the classes this character
+      # already has leveled in.
+      mc = Array.new
+      level.times { |x|
+        lc = @levels[x].character_class
+        if mc.size <= 3 and not mc.include?(lc)
+          mc << lc
+        end
+      }
+      # If it's smaller than four or he already leveled in that class
+      # it's alright that he levels further in it.
+      return (not (mc.size >= 3 and not mc.include?(c)))
+    end
+
     def to_s
       return "Character [Name = #{first_name} #{last_name}, Attributes = #{attributes}, Levels = [ #{levels}] ]"
     end

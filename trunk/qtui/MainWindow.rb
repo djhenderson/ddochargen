@@ -2,6 +2,7 @@
 require 'Qt4'
 
 require "qtui/MainWindow.ui.rb"
+require "qtui/SelectClass.rb"
 
 module QtUI
 
@@ -93,15 +94,61 @@ module QtUI
         btn = Qt::PushButton.new
         btn.accessibleName = "level" + (x+1).to_s
         btn.text = (x+1).to_s
+        btn.flat = true
         btn.connect(SIGNAL(:clicked)) { on_level_button((x+1)) }
         level.setCellWidget(x, 0, btn)
+
+        # Fill up with fighter.
+        @character.levels[x].character_class = "Fighter"
+
+        btn = Qt::PushButton.new
+        btn.accessibleName = "class" + (x+1).to_s
+        btn.text = @character.levels[x].character_class.to_s
+        btn.flat = true
+        btn.connect(SIGNAL(:clicked)) { on_class_button((x+1)) }
+        level.setCellWidget(x, 1, btn);
+        
+        on_class_changed(x+1, @character.levels[x].character_class)
       }
     end
     
     def update_level_table
       update_level_table_abilities
+      update_level_table_bab
+      update_level_table_feats_gained
+    end
+
+    def update_level_table_bab(level = 1)
+      (level..20).to_a.each { |x|
+        bab = @character.levels[x-1].bab
+        
+        itm = @ui.level.item(x-1, 8)
+        if itm.nil?
+          itm = Qt::TableWidgetItem.new
+          @ui.level.setItem(x-1, 8, itm)
+        end
+        itm.text = bab.floor.to_s
+      }
     end
     
+    def update_level_table_feats_gained
+      20.times { |x|
+        c = @character.levels[x].character_class
+        if c.nil?
+          return
+        end
+        cl = @character.class_level(c, x+1)
+        fg = c.feats_gained[cl-1]
+        str = fg.collect { |f| f.to_s }.join(", ")
+        itm = @ui.level.item(x, 13)
+        if itm.nil?
+          itm = Qt::TableWidgetItem.new
+          @ui.level.setItem(x, 13, itm)
+        end
+        itm.text = str
+      }
+    end
+
     # Small function to update only a portion of the level table.
     def update_level_table_abilities
       level = @ui.level
@@ -112,12 +159,15 @@ module QtUI
         
         attr_idx = 2 # Starting position for the attribute columns
         attr.each { |a|
-          item = level.takeItem(l, attr_idx)
+          item = level.item(l, attr_idx)
           if item.nil?
+            item = Qt::TableWidgetItem.new
             # Optimisation: Don't construct a new one, if one's already there.
             item = Qt::TableWidgetItem.new
             item.textAlignment = Qt::AlignCenter
             item.flags = Qt::ItemIsEnabled
+            # Insert.
+            level.setItem(l, attr_idx, item)
           end
           if @character.levels[l].can_increase_ability?
             # Tag this item so that it's clear it's an ability increase thingee.
@@ -132,7 +182,6 @@ module QtUI
             item.font = fnt
           end
           item.text = @character.levels[l].attribute(a).to_s
-          level.setItem(l, attr_idx, item)
           attr_idx = attr_idx + 1
         }
       }
@@ -140,6 +189,27 @@ module QtUI
     
     def on_level_button (level)
       puts "Level button pressed: " + level.to_s + "\n"
+    end
+
+    def on_class_button (level)
+      @sc = QtUI::SelectClass.new(@character, level)
+      if @sc.exec != 0
+        c = @sc.selected_class
+        if not c.nil?
+          @character.levels[level-1].character_class = c
+          on_class_changed(level, c)
+        end
+      end
+    end
+
+    def on_class_changed(level, c)
+      btn = @ui.level.cellWidget(level-1, 1)
+      btn.text = c.name
+
+      # Update feats gained
+      update_level_table_feats_gained
+      # Update BAB
+      update_level_table_bab(level)
     end
 
     def on_level_table_column_clicked(idx)
@@ -177,7 +247,7 @@ module QtUI
     def construct_ability_table
       @ui.abilities.showGrid = false
       @ui.abilities.horizontalHeader.hide
-      #@ui.abilities.horizontalHeader.defaultSectionSize = 40
+      # @ui.abilities.horizontalHeader.defaultSectionSize = 40
       @ui.abilities.horizontalHeader.resizeSection(0, 90)
       4.times { |x| 
         @ui.abilities.horizontalHeader.resizeSection(x+1, 40)
