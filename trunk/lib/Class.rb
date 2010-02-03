@@ -27,6 +27,18 @@ module DDOChargen
       @bab = 1
     end
 
+    def fortitude_save_at (level)
+      return @saves["fortitude"][level-1].to_i
+    end
+
+    def reflex_save_at (level)
+      return @saves["reflex"][level-1].to_i
+    end
+
+    def will_save_at (level)
+      return @saves["will"][level-1].to_i
+    end
+
     def ==(c)
       return (c.to_s.downcase == name.downcase)
     end

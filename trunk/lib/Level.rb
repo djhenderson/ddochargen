@@ -69,6 +69,51 @@ module DDOChargen
       return base
     end
 
+    def class_split
+      mc = Hash.new
+      @level.times { |x|
+        c = @character.levels[x].character_class
+        if not c.nil?
+          if not mc.has_key?(c.name)
+            mc[c.name] = 1
+          else
+            mc[c.name] += 1
+          end
+        end
+      }
+      return mc
+    end
+
+    def fortitude_save
+      cs = class_split
+      save = 0
+      cs.each_pair { |key, value|
+        c = @character.database.find_first key, "Class"
+        save += c.fortitude_save_at(value)
+      }
+      return save
+    end
+
+    def reflex_save
+      cs = class_split
+      save = 0
+      cs.each_pair { |key, value|
+        c = @character.database.find_first key, "Class"
+        save += c.reflex_save_at(value)
+      }
+      return save
+    end
+
+    def will_save
+      cs = class_split
+      save = 0
+      cs.each_pair { |key, value|
+        c = @character.database.find_first key, "Class"
+        save += c.will_save_at(value)
+      }
+      return save
+    end
+
     def bab
       bab = 0
       @level.times { |x|

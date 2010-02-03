@@ -116,6 +116,34 @@ module QtUI
       update_level_table_abilities
       update_level_table_bab
       update_level_table_feats_gained
+      update_level_table_saves
+    end
+
+    def update_level_table_saves
+      20.times { |x|
+        lvl = @character.levels[x]
+
+        itm = @ui.level.item(x, 9)
+        if itm.nil?
+          itm = Qt::TableWidgetItem.new
+          @ui.level.setItem(x, 9, itm)
+        end
+        itm.text = lvl.fortitude_save.to_s
+
+        itm = @ui.level.item(x, 10)
+        if itm.nil?
+          itm = Qt::TableWidgetItem.new
+          @ui.level.setItem(x, 10, itm)
+        end
+        itm.text = lvl.reflex_save.to_s
+
+        itm = @ui.level.item(x, 11)
+        if itm.nil?
+          itm = Qt::TableWidgetItem.new
+          @ui.level.setItem(x, 11, itm)
+        end
+        itm.text = lvl.will_save.to_s
+      }
     end
 
     def update_level_table_bab(level = 1)
@@ -210,6 +238,8 @@ module QtUI
       update_level_table_feats_gained
       # Update BAB
       update_level_table_bab(level)
+      # Update saves
+      update_level_table_saves
     end
 
     def on_level_table_column_clicked(idx)
