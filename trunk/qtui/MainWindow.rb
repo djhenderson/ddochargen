@@ -113,105 +113,97 @@ module QtUI
     end
     
     def update_level_table
-      update_level_table_abilities
-      update_level_table_bab
-      update_level_table_feats_gained
-      update_level_table_saves
-    end
-
-    def update_level_table_saves
       20.times { |x|
-        lvl = @character.levels[x]
-
-        itm = @ui.level.item(x, 9)
-        if itm.nil?
-          itm = Qt::TableWidgetItem.new
-          @ui.level.setItem(x, 9, itm)
-        end
-        itm.text = lvl.fortitude_save.to_s
-
-        itm = @ui.level.item(x, 10)
-        if itm.nil?
-          itm = Qt::TableWidgetItem.new
-          @ui.level.setItem(x, 10, itm)
-        end
-        itm.text = lvl.reflex_save.to_s
-
-        itm = @ui.level.item(x, 11)
-        if itm.nil?
-          itm = Qt::TableWidgetItem.new
-          @ui.level.setItem(x, 11, itm)
-        end
-        itm.text = lvl.will_save.to_s
+        update_level_table_abilities(x)
+        update_level_table_bab(x)
+        update_level_table_feats_gained(x)
+        update_level_table_saves(x)
       }
     end
 
-    def update_level_table_bab(level = 1)
-      (level..20).to_a.each { |x|
-        bab = @character.levels[x-1].bab
-        
-        itm = @ui.level.item(x-1, 8)
-        if itm.nil?
-          itm = Qt::TableWidgetItem.new
-          @ui.level.setItem(x-1, 8, itm)
-        end
-        itm.text = bab.floor.to_s
-      }
+    def update_level_table_saves(x)
+      lvl = @character.levels[x]
+
+      itm = @ui.level.item(x, 9)
+      if itm.nil?
+        itm = Qt::TableWidgetItem.new
+        @ui.level.setItem(x, 9, itm)
+      end
+      itm.text = lvl.fortitude_save.to_s
+
+      itm = @ui.level.item(x, 10)
+      if itm.nil?
+        itm = Qt::TableWidgetItem.new
+        @ui.level.setItem(x, 10, itm)
+      end
+      itm.text = lvl.reflex_save.to_s
+
+      itm = @ui.level.item(x, 11)
+      if itm.nil?
+        itm = Qt::TableWidgetItem.new
+        @ui.level.setItem(x, 11, itm)
+      end
+      itm.text = lvl.will_save.to_s
+    end
+
+    def update_level_table_bab(x)
+      bab = @character.levels[x].bab
+      
+      itm = @ui.level.item(x, 8)
+      if itm.nil?
+        itm = Qt::TableWidgetItem.new
+        @ui.level.setItem(x, 8, itm)
+      end
+      itm.text = bab.floor.to_s
     end
     
-    def update_level_table_feats_gained
-      20.times { |x|
-        c = @character.levels[x].character_class
-        if c.nil?
-          return
-        end
-        cl = @character.class_level(c, x+1)
-        fg = c.feats_gained[cl-1]
-        str = fg.collect { |f| f.to_s }.join(", ")
-        itm = @ui.level.item(x, 13)
-        if itm.nil?
-          itm = Qt::TableWidgetItem.new
-          @ui.level.setItem(x, 13, itm)
-        end
-        itm.text = str
-      }
+    def update_level_table_feats_gained(x)
+      c = @character.levels[x].character_class
+      if c.nil?
+        return
+      end
+      cl = @character.class_level(c, x+1)
+      fg = c.feats_gained[cl-1]
+      str = fg.collect { |f| f.to_s }.join(", ")
+      itm = @ui.level.item(x, 13)
+      if itm.nil?
+        itm = Qt::TableWidgetItem.new
+        @ui.level.setItem(x, 13, itm)
+      end
+      itm.text = str
     end
 
     # Small function to update only a portion of the level table.
-    def update_level_table_abilities
+    def update_level_table_abilities(l)
       level = @ui.level
       attr = [ "str", "dex", "con", "int", "wis", "cha" ]
-      
-      20.times { |l|
-        lvl = l + 1
-        
-        attr_idx = 2 # Starting position for the attribute columns
-        attr.each { |a|
-          item = level.item(l, attr_idx)
-          if item.nil?
-            item = Qt::TableWidgetItem.new
-            # Optimisation: Don't construct a new one, if one's already there.
-            item = Qt::TableWidgetItem.new
-            item.textAlignment = Qt::AlignCenter
-            item.flags = Qt::ItemIsEnabled
-            # Insert.
-            level.setItem(l, attr_idx, item)
-          end
-          if @character.levels[l].can_increase_ability?
-            # Tag this item so that it's clear it's an ability increase thingee.
-            item.setData(Qt::UserRole + 0, Qt::Variant.new(QtUI::ItemAction::ABILITY))
-            item.setData(Qt::UserRole + 1, Qt::Variant.new(l)); # Column
-            item.setData(Qt::UserRole + 2, Qt::Variant.new(attr_idx)) # Set level
-            item.setData(Qt::UserRole + 3, Qt::Variant.new(a)) # Set ability
-            # Mark all non-bold except those we have an increase in.
-            # **TODO** Find something better than making the text bold.
-            fnt = item.font
-            fnt.bold = (@character.levels[l].increase_in == a)
-            item.font = fnt
-          end
-          item.text = @character.levels[l].attribute(a).to_s
-          attr_idx = attr_idx + 1
-        }
+            
+      attr_idx = 2 # Starting position for the attribute columns
+      attr.each { |a|
+        item = level.item(l, attr_idx)
+        if item.nil?
+          item = Qt::TableWidgetItem.new
+          # Optimisation: Don't construct a new one, if one's already there.
+          item = Qt::TableWidgetItem.new
+          item.textAlignment = Qt::AlignCenter
+          item.flags = Qt::ItemIsEnabled
+          # Insert.
+          level.setItem(l, attr_idx, item)
+        end
+        if @character.levels[l].can_increase_ability?
+          # Tag this item so that it's clear it's an ability increase thingee.
+          item.setData(Qt::UserRole + 0, Qt::Variant.new(QtUI::ItemAction::ABILITY))
+          item.setData(Qt::UserRole + 1, Qt::Variant.new(l)); # Column
+          item.setData(Qt::UserRole + 2, Qt::Variant.new(attr_idx)) # Set level
+          item.setData(Qt::UserRole + 3, Qt::Variant.new(a)) # Set ability
+          # Mark all non-bold except those we have an increase in.
+          # **TODO** Find something better than making the text bold.
+          fnt = item.font
+          fnt.bold = (@character.levels[l].increase_in == a)
+          item.font = fnt
+        end
+        item.text = @character.levels[l].attribute(a).to_s
+        attr_idx = attr_idx + 1
       }
     end
     
@@ -234,12 +226,14 @@ module QtUI
       btn = @ui.level.cellWidget(level-1, 1)
       btn.text = c.name
 
-      # Update feats gained
-      update_level_table_feats_gained
-      # Update BAB
-      update_level_table_bab(level)
-      # Update saves
-      update_level_table_saves
+      20.times { |x|
+        # Update feats gained
+        update_level_table_feats_gained(x)
+        # Update saves
+        update_level_table_saves(x)
+        # Update BAB
+        update_level_table_bab(x)
+      }
     end
 
     def on_level_table_column_clicked(idx)
@@ -251,7 +245,7 @@ module QtUI
             l.increase_attribute(attr[idx])
           end
         }
-        update_level_table_abilities()
+        20.times { |x| update_level_table_abilities(x) }
       end
     end
 
