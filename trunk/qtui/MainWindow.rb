@@ -162,8 +162,14 @@ module QtUI
       if c.nil?
         return
       end
+      # **TODO** Pack this logic into the character class instead.
       cl = @character.class_level(c, x+1)
       fg = c.feats_gained[cl-1]
+      if x == 0 and not @race.nil?
+        # If this is the first level, then they are usually
+        # some feats the race gains aswell.
+        fg = fg | @character.race.feats_gained
+      end
       str = fg.collect { |f| f.to_s }.join(", ")
       itm = @ui.level.item(x, 13)
       if itm.nil?
@@ -363,6 +369,8 @@ module QtUI
         @ui.buildpoints.currentIndex = 0
       end
       update_ability_table
+      # Update first level and the feats gained in that.
+      update_level_table_feats_gained(0)
     end
 
     def on_alignment_changed ( item )

@@ -19,6 +19,9 @@ module DDOChargen
     end
 
     def ==(what)
+      if what.nil?
+        return false
+      end
       return (what.to_s.downcase == @name.downcase)
     end
 
