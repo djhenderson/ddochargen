@@ -1,0 +1,1 @@
+This application allows players to plan, build and toy around with character before actually creating them inside the game.
